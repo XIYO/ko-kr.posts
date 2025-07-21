@@ -17,7 +17,7 @@ echo "🔧 Skipping type check for testing..."
 # 3. 블로그 포스트에 기본 frontmatter 추가
 echo "📝 Adding basic frontmatter to blog posts..."
 
-STAGED_MD=$(git diff --cached --name-only --diff-filter=ACM | grep '^static/posts/.*\.md$' || true)
+STAGED_MD=$(git diff --cached --name-only --diff-filter=ACM | grep '^posts/.*\.md$' || true)
 
 if [ -n "$STAGED_MD" ]; then
   for file in $STAGED_MD; do
