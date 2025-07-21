@@ -33,7 +33,7 @@ tags:
 > 대부분의 Container Registry는 로그인 후 이미지를 다운로드하는 것이 원칙입니다.
 > 하지만 Oracle은 Free Edition을 "미끼 상품"으로 활용하여 로그인 없이도 다운로드할 수 있게 허용합니다.
 > 
-> Container Registry에 대한 자세한 내용은 [Oracle Database 개념 가이드](oracle-database-concepts.md#container-registry란)를 참조하세요.
+> Container Registry에 대한 자세한 내용은 [Oracle Database 개념 가이드](/ko-kr/posts/infrastructure/docker/oracle-database-concepts#container-registry란)를 참조하세요.
 
 개발자를 위한 최신 무료 버전인 Oracle Database 23c Free를 다운로드합니다.
 
