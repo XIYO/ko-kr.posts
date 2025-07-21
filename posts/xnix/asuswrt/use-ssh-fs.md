@@ -75,7 +75,7 @@ title: USE SSH FS
 ---
 # USE SSH FS
 
-![*VS Code*에서 *SSH FS*으로 연결한 화면](/static/resources/2023-10-22-11-55-54.png)
+![*VS Code*에서 *SSH FS*으로 연결한 화면](.assets/2023-10-22-11-55-54.png)
 
 *VS Code*의 *SSH FS*를 사용하여 편리하게 파일을 관리하는 방법을 알아봅니다.
 
@@ -128,7 +128,7 @@ title: USE SSH FS
 
 ## USAGE
 
-![*SSH FS* 설정 화면](/static/resources/2023-10-22-13-40-10.png)
+![*SSH FS* 설정 화면](.assets/2023-10-22-13-40-10.png)
 
 _SSH_ 접속과 동일한 접속 정보를 요구합니다.
 

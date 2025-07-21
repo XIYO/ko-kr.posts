@@ -24,7 +24,7 @@ OS 초기화가 필요해서 초기에 설정된 OS 이외에 완전한 클린�
 
 설치 이후에는 무선 랜 드라이버가 기본으로 설치되는것을 예상했지만 예상과는 다르게 직접 설치해야했습니다.
 
-![무선 랜 드라이버 리스트](/static/resources/install-driver-for-lg-gram-20240826221737828.png)
+![무선 랜 드라이버 리스트](.assets/install-driver-for-lg-gram-20240826221737828.png)
  
  > 무선랜 드라이버를 다운받아 드라이버를 설치하였습니다.
 
@@ -37,7 +37,7 @@ OS 초기화가 필요해서 초기에 설정된 OS 이외에 완전한 클린�
 
 결국 남은 몇 드라이버의 설치를 포기하려다가 한번더 [LG 다운로드 센터](https://www.lge.co.kr/support/product-manuals)를 가봤떠니 전용 업데이트 도구가 따로 있었습니다...
 
-![다운로드 센터 화면](/static/resources/install-driver-for-lg-gram-20240826222611325.png)
+![다운로드 센터 화면](.assets/install-driver-for-lg-gram-20240826222611325.png)
 
 > 모델명 검색에만 눈이가서 보이지 않았던 "LG Update 프로그램"이 다시 보니 보였다...
 

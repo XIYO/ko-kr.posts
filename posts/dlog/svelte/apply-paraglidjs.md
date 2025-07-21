@@ -28,7 +28,7 @@ description: '새로운 국제화 라이브러리인 '
 
 [Paraglide JS | inlang](https://inlang.com/m/gerre34r/library-inlang-paraglideJs) 에서 설명하는 특징은 가벼움, 타입 세이프, VS Code 확장 제공 등 이외에, 편리한 특징은 "번역 에디터 제공" 입니다.
 
-![Paraglide JS의 에디터](/static/resources/apply-paraglidjs-20240918153234469.png)
+![Paraglide JS의 에디터](.assets/apply-paraglidjs-20240918153234469.png)
 > 개발 시스템이 없는 외부에서도 에디터를 통해 번역본을 제공할 수 있습니다.
 
 개발 초기에는 한국어로만 작성하여 빠른 작업물을 만들고, 후에 에디터를 통해 작업할 수 있어 협업시에도 상당히 편리한 기능입니다. 특히, "기계 번역 기능을 제공"해주기 때문에 빠르게 번역본을 제공할 수 있습니다.
@@ -164,7 +164,7 @@ npm install
 
 이제 이 선택기를 원하는 위치에 넣기만 하면 언어 변경이 매우 쉽게 동작합니다.
 
-![언어 선택기를 적용한 모습](/static/resources/apply-paraglidjs-20240918161625634.png)
+![언어 선택기를 적용한 모습](.assets/apply-paraglidjs-20240918161625634.png)
 
 > 언어 선택기를 내비게이션에 넣었습니다. 
 
