@@ -36,8 +36,8 @@ messages:
 
 ## SOLUTION
 
-!["서치 에브리웨어" 열기](.assets/enable-force-push-20240918104825841.png)
-!["protected branch" 필드 수정](.assets/enable-force-push-20240918104833418.png)
+!["서치 에브리웨어" 열기](./assets/enable-force-push-20240918104825841.png)
+!["protected branch" 필드 수정](./assets/enable-force-push-20240918104833418.png)
 
 - 방법 0. <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd> 조합 단축키를 입력해 `Search Everywhere` 창을 엽니다. 0. `Search Everywhere` 창에서 "Protected branches:"를 입력하고 일치하는 항목을 클릭합니다. 0. `settings` 창에서 `Protected branches:` 필드를 찾아 내용을 삭제합니다.
 

@@ -25,7 +25,7 @@ messages:
 
 macOS에서 IntelliJ IDEA의 프로젝트 열기를 항상 탭으로 설정하는 방법을 알아봅니다.
 
-![multiple_projects_in_tabs](.assets/f242f044157db312140297d1c9971de403b0af207ef3f77f2bf74a1c300440ec5f0d02e7aea059020dfb14c19fa93f3f5dcdfe94d007a5e2c218ee9afd0f74b4.png)
+![multiple_projects_in_tabs](./assets/f242f044157db312140297d1c9971de403b0af207ef3f77f2bf74a1c300440ec5f0d02e7aea059020dfb14c19fa93f3f5dcdfe94d007a5e2c218ee9afd0f74b4.png)
 
 > 프로젝트가 탭으로 열린 상태
 
@@ -36,7 +36,7 @@ macOS에서는 여러 프로젝트나 문서를 열 때 **새 창이 아니라 �
 
 ## 탭으로 열기 위한 설정
 
-![always_open_tabs](.assets/b8e84f65bef3200d9888d2bc90183f76ec8c4fe129e8c0396e169265fefaffb656f2641df0f2dae9c7f59cc9c062dee44d39093993ea06acf46699d903d126cf.png)
+![always_open_tabs](./assets/b8e84f65bef3200d9888d2bc90183f76ec8c4fe129e8c0396e169265fefaffb656f2641df0f2dae9c7f59cc9c062dee44d39093993ea06acf46699d903d126cf.png)
 
 > 모든 애플리케이션이 탭으로 열리게 됩니다.
 

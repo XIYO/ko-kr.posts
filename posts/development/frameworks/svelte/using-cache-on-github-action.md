@@ -26,17 +26,17 @@ GitHub Actions를 사용하면서, 빌드 속도가 점차 느려지는 것을 �
 
 ## 빌드 속도 변화
 
-![초기의 빌드 속도는 40초 미만](.assets/usging-cache-on-github-action-20240815232353052.png)
+![초기의 빌드 속도는 40초 미만](./assets/usging-cache-on-github-action-20240815232353052.png)
 
 초기의 빌드 속도는 40초 미만으로 매우 빠른 편이었습니다. 그러나 시간이 지남에 따라 빌드 시간이 점점 길어졌고, 특히 Markdown 파일에 Mermaid 파서를 추가한 후로는 빌드 시간이 급격하게 증가하였습니다.
 
-![느려진 빌드 속도는 1분을 넘어 1분 30까지 가려는 듯](.assets/usging-cache-on-github-action-20240815232537900.png)
+![느려진 빌드 속도는 1분을 넘어 1분 30까지 가려는 듯](./assets/usging-cache-on-github-action-20240815232537900.png)
 
 이는 단순히 Mermaid 문법의 문제만은 아닙니다. 저의 블로그는 Svelte를 이용하여 프리렌더를 수행하기 때문에, 초기 빌드 시 모든 Markdown 파일을 파싱해야 하는 시간이 필요했습니다.
 
 게다가, Markdown 파일에 프론트매터(front matter)를 사용하지 않고 GitHub에서도 정상적으로 표시되기를 원했기 때문에, 작성일이나 수정일 등의 메타데이터를 포함시키지 않은 상태였습니다. 이러한 부분을 보완하기 위해 `git log` 명령어를 사용하여 해당 데이터를 추가하는 작업을 하다 보니, CPU 부하가 큰 작업이 많아져 성능 향상도 어려웠습니다. (워커로 분리하면 성능이 개선될 수 있지만, 아직 제 실력으로는 쉽지 않네요...)
 
-![단순히 디펜던시 설치만 하는데도 30초를 사용](.assets/usging-cache-on-github-action-20240815233139668.png)
+![단순히 디펜던시 설치만 하는데도 30초를 사용](./assets/usging-cache-on-github-action-20240815233139668.png)
 
 결국 빌드 최적화를 위해, 먼저 패키지 설치 시간을 줄이는 것에 초점을 맞추기로 했습니다.
 
@@ -144,9 +144,9 @@ Node.js 모듈 캐시는 `actions/setup-node@v4`에서 제공하는 `cache: pnpm
 
 ## 빌드 속도 변화
 
-![최적화된 빌드 속도는 1분 10초쯤...](.assets/usging-cache-on-github-action-20240816000140052.png)
+![최적화된 빌드 속도는 1분 10초쯤...](./assets/usging-cache-on-github-action-20240816000140052.png)
 
-![내부적인 속도는 50초를 넘지 않음](.assets/usging-cache-on-github-action-20240816000251502.png)
+![내부적인 속도는 50초를 넘지 않음](./assets/usging-cache-on-github-action-20240816000251502.png)
 
 빌드 속도가 크게 향상되지는 않았지만, 적절한 최적화를 통해 어느 정도 만족할 수 있는 결과를 얻었습니다.
 

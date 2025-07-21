@@ -60,14 +60,14 @@ messages:
 1. 마이크로소프트 스토어에서 [파워토이](https://apps.microsoft.com/store/detail/XP89DCGQ3K6VLD?ocid=pdpshare)를 설치합니다.
 2. 파워토이 앱을 실행하고 "메뉴" 영역에서 "keyboard manager" 버튼을 클릭합니다.
 3. "메인" 영역의 "바로 가기 다시 매핑" 버튼을 클릭합니다.
-   ![키보드 매니저 영역에서 바로 가기 다시 매핑](.assets/changing-the-korean-english-switch-key-20240918110239147.png)
+   ![키보드 매니저 영역에서 바로 가기 다시 매핑](./assets/changing-the-korean-english-switch-key-20240918110239147.png)
 4. "바로 가기 다시 매핑" 창에서 키를 매핑 합니다.
    1. "선택" 영역에서 창에서 "바로 가기" 옆의 ✏️ 버튼을 클릭하고 조합 키를 입력합니다.
-      ![윈도우 키와 스페이스 조합키를 한영으로 사용](.assets/changing-the-korean-english-switch-key-20240918110408909.png)
+      ![윈도우 키와 스페이스 조합키를 한영으로 사용](./assets/changing-the-korean-english-switch-key-20240918110408909.png)
    2. "대상" 영역에서도 똑같이 "바로 가기" 옆의 ✏️ 버튼을 클릭하고 "한영" 키를 입력합니다.
 5. "바로 가기 다시 매핑" 창에서 "저장" 버튼을 클릭합니다.
 6. "키보드 매니저" 창에서 "적용" 버튼을 클릭합니다.
-   ![한영 키가 추가적으로 등록된 상태](.assets/changing-the-korean-english-switch-key-20240918110510904.png)
+   ![한영 키가 추가적으로 등록된 상태](./assets/changing-the-korean-english-switch-key-20240918110510904.png)
 
 이제 한영 전환은 두 가지 방법으로 가능합니다.
 
