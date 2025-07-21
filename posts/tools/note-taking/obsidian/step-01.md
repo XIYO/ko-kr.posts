@@ -26,7 +26,7 @@ tags: obsidian, sync, git, cloud, backup
 
 > [!IMPORTANT]
 > **사전 준비 필요**
-> Git과 GitHub 설정이 필요합니다. [Git & GitHub 설정 가이드](../mac-setup/git-github-setup.md)를 먼저 완료하세요.
+> Git과 GitHub 설정이 필요합니다. [Git & GitHub 설정 가이드](../mac-setup/git-github-setup)를 먼저 완료하세요.
 
 ### Obsidian Git 플러그인 설치
 
@@ -209,6 +209,6 @@ Settings → Obsidian Git에서:
 ## 다음 단계
 
 동기화 설정이 완료되었다면:
-- [필수 플러그인 설치](step-02.md)
-- [고급 설정](step-03.md)
+- [필수 플러그인 설치](step-02)
+- [고급 설정](step-03)
 

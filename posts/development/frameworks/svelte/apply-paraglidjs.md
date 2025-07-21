@@ -41,15 +41,15 @@ messages:
 HTML 문서에 언어에 대한 정보를 추가적으로 삽입해주기 때문에 SEO와 브라우저에 최적화를 해줍니다.
 
 ```html
-<html lang="ko-KR" dir="ltr">
+<html lang="ko-kr" dir="ltr">
   <head>
-  <link rel="alternate" hreflang="ko-KR" href="http://localhost:5173/posts">
-  <link rel="alternate" hreflang="ja-JP" href="http://localhost:5173/ja-JP/posts">
-  <link rel="alternate" hreflang="en-US" href="http://localhost:5173/en-US/posts">
+  <link rel="alternate" hreflang="ko-kr" href="http://localhost:5173/posts">
+  <link rel="alternate" hreflang="ja-jp" href="http://localhost:5173/ja-jp/posts">
+  <link rel="alternate" hreflang="en-us" href="http://localhost:5173/en-us/posts">
   </head>
 ```
 
-> `<html lang="ko-KR" dir="ltr">` 의 `lang` 속성은 브라우저가 번역 옵션의 활성화를 고려하는 속성입니다. `dir` 속성은 글의 방향을 제어하는 속성입니다. 
+> `<html lang="ko-kr" dir="ltr">` 의 `lang` 속성은 브라우저가 번역 옵션의 활성화를 고려하는 속성입니다. `dir` 속성은 글의 방향을 제어하는 속성입니다. 
 
 
 ## 적용 방법
@@ -106,9 +106,9 @@ npm install
 스벨트킷 이니셜라이저를 사용했다면, `/messages/{lang}.json`에 각 언어에 맞는 파일이 생성됩니다. 
 초기에는 하나의 언어에 대해서만 작성하고, 에디터를 이용해 추가 번역본을 제공할 수 있습니다.
 
-`/messages/ko-KR.json`에 문장 추가
+`/messages/ko-kr.json`에 문장 추가
 
-```json data-title="ko-KR.json"
+```json data-title="ko-kr.json"
 {
     "$schema": "https://inlang.com/schema/inlang-message-format",  
     "title": "이요의 홀",  

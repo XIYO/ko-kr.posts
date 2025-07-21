@@ -18,7 +18,7 @@ tags:
 
 > [!NOTE]
 > **사전 요구사항**
-> 이 가이드를 진행하기 전에 [Homebrew 설치](step-00.md)가 완료되어야 합니다.
+> 이 가이드를 진행하기 전에 [Homebrew 설치](step-00)가 완료되어야 합니다.
 
 ## 필수 도구 설치
 
@@ -87,12 +87,12 @@ brew install --cask font-pretendard
 
 ## 추가 설정
 
-- **Git & GitHub CLI** → [Git & GitHub 설정 가이드](git-github-setup.md)
-- **JetBrains Toolbox** → [JetBrains 설정 가이드](jetbrains-setup.md)
-- **iTerm2 + Oh My Zsh** → [터미널 꾸미기 가이드](terminal-customization.md)
+- **Git & GitHub CLI** → [Git & GitHub 설정 가이드](git-github-setup)
+- **JetBrains Toolbox** → [JetBrains 설정 가이드](jetbrains-setup)
+- **iTerm2 + Oh My Zsh** → [터미널 꾸미기 가이드](terminal-customization)
 
 ## 다음 단계
 
 필수 도구 설치가 완료되었습니다.
 
-[다음 단계: 시스템 유틸리티 설치](step-02.md)
+[다음 단계: 시스템 유틸리티 설치](step-02)

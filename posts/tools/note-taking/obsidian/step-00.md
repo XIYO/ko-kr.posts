@@ -46,7 +46,7 @@ Settings (Cmd+,) → Files & Links:
 - **Relative path to file**: ON
 
 > [!INFO]
-> Wiki 링크 `[[파일명]]` 대신 표준 마크다운 `[텍스트](파일명.md)`를 사용합니다.
+> Wiki 링크 `[[파일명]]` 대신 표준 마크다운 `[텍스트](파일명)`를 사용합니다.
 > GitHub, VS Code 등 다른 마크다운 에디터와 호환됩니다.
 
 ### 첨부 파일 정리 (assets 폴더)
@@ -115,7 +115,7 @@ Settings → Core plugins → Templates 활성화 후:
 새 노트를 만들어서 테스트:
 
 1. **링크 테스트**:
-   - `Cmd + K`로 링크 생성 → `[](test.md)` 형식인지 확인
+   - `Cmd + K`로 링크 생성 → `[](test)` 형식인지 확인
 
 2. **이미지 테스트**:
    - 이미지 드래그 → `assets` 폴더에 저장되는지 확인
@@ -199,8 +199,8 @@ Settings → Hotkeys에서 추가:
 ## 노트 작성 팁
 
 ### 링크 활용 (마크다운 형식)
-- `[노트 이름](노트이름.md)`: 다른 노트로 링크
-- `[섹션 링크](노트이름.md#헤딩)`: 특정 섹션으로 링크
+- `[노트 이름](노트이름)`: 다른 노트로 링크
+- `[섹션 링크](노트이름#헤딩)`: 특정 섹션으로 링크
 
 ### 태그 시스템
 - `#project/frontend`: 계층적 태그 사용
@@ -216,5 +216,5 @@ Settings → Hotkeys에서 추가:
 ## 다음 단계
 
 기본 설정이 끝났다면:
-- [마크다운 기본 기능](markdown-basics.md) - Mermaid, LaTeX, Callout 등
-- [동기화 설정](step-01.md) - Git, Cloud, Obsidian Sync
+- [마크다운 기본 기능](markdown-basics) - Mermaid, LaTeX, Callout 등
+- [동기화 설정](step-01) - Git, Cloud, Obsidian Sync

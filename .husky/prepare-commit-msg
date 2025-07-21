@@ -1,1 +1,0 @@
-echo "⏩ prepare-commit-msg hook disabled (using simple pre-commit approach)"

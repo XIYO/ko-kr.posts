@@ -1,2 +1,0 @@
-echo "🎉 Post-commit hook executed successfully!"
-echo "ℹ️  Frontmatter updates are now handled by simple pre-commit hook"
