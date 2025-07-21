@@ -1,14 +1,15 @@
 ---
+title: Shiki와 함께하는 Markdown 코드 하이라이팅
 authors:
   - XIYO
   - XIYO
 dates:
-  - '2024-08-15T02:25+0900'
-  - '2024-08-14T05:19+0900'
+  - 2024-08-15T02:25+0900
+  - 2024-08-14T05:19+0900
+tags: []
 messages:
   - ':art: run format'
   - ':art: shikijs-rehypte 사용법 추가'
-title: Shiki와 함께하는 Markdown 코드 하이라이팅
 ---
 # Shiki와 함께하는 Markdown 코드 하이라이팅
 

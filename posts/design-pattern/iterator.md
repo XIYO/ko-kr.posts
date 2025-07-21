@@ -1,12 +1,13 @@
 ---
+title: 이터레이터
+description: 컬렉션의 순회 방법을 정해줌으로써 사용
 authors:
   - xiyo
 dates:
-  - '2024-12-11T12:33+0900'
+  - 2024-12-11T12:33+0900
+tags: []
 messages:
   - ':memo: 이터레이터 초안'
-title: 이터레이터
-description: 컬렉션의 순회 방법을 정해줌으로써 사용
 ---
 # 이터레이터
 

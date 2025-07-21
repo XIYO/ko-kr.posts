@@ -1,14 +1,15 @@
 ---
-authors:
-  - XIYO
-dates:
-  - '2024-10-05T22:08+0900'
-messages:
-  - ':memo: new post'
 title: 리터럴의 메모리 저장 방식
 description: >-
   리터럴은 프로그래밍 언어에서 변수에 직접 할당되는 고정된 값을 의미합니다. 이 글에서는 자바의 리터럴이 메모리에 어떻게 저장되고 관리되는지
   살펴보겠습니다.
+authors:
+  - XIYO
+dates:
+  - 2024-10-05T22:08+0900
+tags: []
+messages:
+  - ':memo: new post'
 ---
 # 리터럴의 메모리 저장 방식
 

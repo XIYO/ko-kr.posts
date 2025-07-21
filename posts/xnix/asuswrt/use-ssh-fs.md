@@ -1,4 +1,5 @@
 ---
+title: USE SSH FS
 authors:
   - XIYO
   - XIYO
@@ -24,29 +25,30 @@ authors:
   - XIYO
   - XIYO
 dates:
-  - '2024-09-10T20:23+0900'
-  - '2024-08-11T03:10+0900'
-  - '2024-08-11T00:26+0900'
-  - '2024-08-09T19:22+0900'
-  - '2024-03-23T22:30+0900'
-  - '2024-03-16T12:06+0900'
-  - '2024-03-12T20:50+0900'
-  - '2023-10-22T20:29+0900'
-  - '2023-10-22T20:28+0900'
-  - '2023-10-22T18:44+0900'
-  - '2023-10-22T18:43+0900'
-  - '2023-10-22T18:42+0900'
-  - '2023-10-22T18:34+0900'
-  - '2023-10-22T18:20+0900'
-  - '2023-10-22T13:48+0900'
-  - '2023-10-22T13:15+0900'
-  - '2023-10-22T13:08+0900'
-  - '2023-10-22T12:08+0900'
-  - '2023-10-22T12:08+0900'
-  - '2023-10-22T12:07+0900'
-  - '2023-10-22T12:04+0900'
-  - '2023-10-22T00:13+0900'
-  - '2023-10-21T23:59+0900'
+  - 2024-09-10T20:23+0900
+  - 2024-08-11T03:10+0900
+  - 2024-08-11T00:26+0900
+  - 2024-08-09T19:22+0900
+  - 2024-03-23T22:30+0900
+  - 2024-03-16T12:06+0900
+  - 2024-03-12T20:50+0900
+  - 2023-10-22T20:29+0900
+  - 2023-10-22T20:28+0900
+  - 2023-10-22T18:44+0900
+  - 2023-10-22T18:43+0900
+  - 2023-10-22T18:42+0900
+  - 2023-10-22T18:34+0900
+  - 2023-10-22T18:20+0900
+  - 2023-10-22T13:48+0900
+  - 2023-10-22T13:15+0900
+  - 2023-10-22T13:08+0900
+  - 2023-10-22T12:08+0900
+  - 2023-10-22T12:08+0900
+  - 2023-10-22T12:07+0900
+  - 2023-10-22T12:04+0900
+  - 2023-10-22T00:13+0900
+  - 2023-10-21T23:59+0900
+tags: []
 messages:
   - ':art: 리소스 경로를 규격에 맞게 통일'
   - 'Revert ":truck: 포스트 데이터 이동"'
@@ -55,23 +57,22 @@ messages:
   - ':truck: 마크다운 파일명 변경 및 구조 변경'
   - ':fire: asuswrt를 xnix 하위로 이동'
   - ':lipstick: 스벨트킷으로 변경'
-  - "\U0001F4DD improve sentence"
-  - "\U0001F4DD improve sentence"
-  - "\U0001F4DD Improve sectence"
-  - "\U0001F4DD Move and edit sentence"
+  - 📝 improve sentence
+  - 📝 improve sentence
+  - 📝 Improve sectence
+  - 📝 Move and edit sentence
   - ✏️ remove asterisks from korean text
   - ✏️ Update official notaion
   - ✏️ Fix typo
-  - "\U0001F4DD Add step-by-step explanation, image"
-  - "\U0001F4DD Improve readability of the text"
-  - "\U0001F69A ./resoureces -> /assets/resources"
-  - "\U0001F4DD Add blank line"
-  - "\U0001F4DD Remove whitespace"
-  - "\U0001F4DD Improve readability of the text"
-  - "\U0001F4DD add image"
-  - "\U0001F4DD add other solution"
-  - "\U0001F331 USE SSH FS"
-title: USE SSH FS
+  - 📝 Add step-by-step explanation, image
+  - 📝 Improve readability of the text
+  - 🚚 ./resoureces -> /assets/resources
+  - 📝 Add blank line
+  - 📝 Remove whitespace
+  - 📝 Improve readability of the text
+  - 📝 add image
+  - 📝 add other solution
+  - 🌱 USE SSH FS
 ---
 # USE SSH FS
 

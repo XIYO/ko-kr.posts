@@ -1,11 +1,12 @@
 ---
-category: blog
 title: Git 히스토리 기반의 프론트매터 자동화 시스템 구축
 description: 이 문서는 마크다운 기반의 블로그에서 프론트매터를 깃 기반으로 자동 관리하는 방법을 다룹니다.
+category: blog
 authors:
   - xiyo
 dates:
   - '2025-07-13T18:04:32+09:00'
+tags: []
 messages:
   - '✨ 새로운 블로그 포스트 추가: Git 히스토리 기반의 프론트매터 자동화 시스템 구축 문서 작성'
 ---

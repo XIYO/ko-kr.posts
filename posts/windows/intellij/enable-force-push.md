@@ -1,4 +1,6 @@
 ---
+title: ENABLE FORCE PUSH ON INTELLIJ
+description: '인텔리제이에서 포스 푸시는 마스터, 메인 브랜치에서는 할 수 없게 기본적으로 보호되어있습니다. '
 authors:
   - XIYO
   - XIYO
@@ -7,12 +9,13 @@ authors:
   - XIYO
   - XIYO
 dates:
-  - '2024-09-18T11:16+0900'
-  - '2024-08-11T03:10+0900'
-  - '2024-08-11T00:26+0900'
-  - '2024-08-09T19:22+0900'
-  - '2024-03-24T18:22+0900'
-  - '2024-03-24T18:17+0900'
+  - 2024-09-18T11:16+0900
+  - 2024-08-11T03:10+0900
+  - 2024-08-11T00:26+0900
+  - 2024-08-09T19:22+0900
+  - 2024-03-24T18:22+0900
+  - 2024-03-24T18:17+0900
+tags: []
 messages:
   - ':truck: 이미지 경로를 전부 /static/resource 로 이동'
   - 'Revert ":truck: 포스트 데이터 이동"'
@@ -20,8 +23,6 @@ messages:
   - ':art: 프리티어 실행'
   - ':memo: 문장 보강'
   - ':see_no_evil: enable-force-push.md'
-title: ENABLE FORCE PUSH ON INTELLIJ
-description: '인텔리제이에서 포스 푸시는 마스터, 메인 브랜치에서는 할 수 없게 기본적으로 보호되어있습니다. '
 ---
 # ENABLE FORCE PUSH ON INTELLIJ
 

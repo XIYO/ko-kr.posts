@@ -1,12 +1,13 @@
 ---
+title: Paraglide JS 적용기
+description: '새로운 국제화 라이브러리인 '
 authors:
   - XIYO
 dates:
-  - '2024-09-18T17:12+0900'
+  - 2024-09-18T17:12+0900
+tags: []
 messages:
   - ':memo: Paraglide JS 적용기'
-title: Paraglide JS 적용기
-description: '새로운 국제화 라이브러리인 '
 ---
 # Paraglide JS 적용기
 

@@ -1,18 +1,19 @@
 ---
+title: 팝오버 API 사용하기
+description: '저의 블로그 내비게이션은 '
 authors:
   - XIYO
   - XIYO
   - XIYO
 dates:
-  - '2024-08-21T16:27+0900'
-  - '2024-08-18T16:08+0900'
-  - '2024-08-17T01:19+0900'
+  - 2024-08-21T16:27+0900
+  - 2024-08-18T16:08+0900
+  - 2024-08-17T01:19+0900
+tags: []
 messages:
   - ':pencil2: 오타 수정'
   - ':art: run format'
   - ':memo: add post - using-popover-api.md'
-title: 팝오버 API 사용하기
-description: '저의 블로그 내비게이션은 '
 ---
 # 팝오버 API 사용하기
 

@@ -1,21 +1,22 @@
 ---
+title: INSTALL RSYNC
+description: '라우터에 nginx를 구동중 입니다. '
 authors:
   - XIYO
   - XIYO
   - XIYO
   - XIYO
 dates:
-  - '2024-08-11T03:10+0900'
-  - '2024-08-11T00:26+0900'
-  - '2024-08-09T19:22+0900'
-  - '2024-03-24T16:54+0900'
+  - 2024-08-11T03:10+0900
+  - 2024-08-11T00:26+0900
+  - 2024-08-09T19:22+0900
+  - 2024-03-24T16:54+0900
+tags: []
 messages:
   - 'Revert ":truck: 포스트 데이터 이동"'
   - ':truck: 포스트 데이터 이동'
   - ':art: 프리티어 실행'
   - ':seedling: install-rsync.md'
-title: INSTALL RSYNC
-description: '라우터에 nginx를 구동중 입니다. '
 ---
 # INSTALL RSYNC
 
