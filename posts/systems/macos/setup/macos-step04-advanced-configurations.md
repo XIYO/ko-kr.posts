@@ -1,5 +1,5 @@
 ---
-title: Step 04
+title: 고급 설정
 authors:
   - XIYO
 dates:

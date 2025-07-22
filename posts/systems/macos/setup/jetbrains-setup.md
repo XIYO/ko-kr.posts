@@ -174,7 +174,7 @@ IntelliJ의 생산성을 극대화하는 핵심 단축키들입니다. 이것들
 > **D2Coding Nerd Font 사전 설치 확인**
 >
 > D2Coding Nerd Font는 한글 지원과 개발자 아이콘을 모두 지원하는 폰트입니다.
-> step-01.md에서 이미 설치했으므로 설정만 진행하면 됩니다.
+> macos-step01-essential-developer-tools.md에서 이미 설치했으므로 설정만 진행하면 됩니다.
 
 ### 에디터 폰트 설정
 
@@ -250,4 +250,4 @@ idea .
 idea ~/projects/my-project
 ```
 
-[돌아가기](step-01)
+[돌아가기](macos-step01-essential-developer-tools)

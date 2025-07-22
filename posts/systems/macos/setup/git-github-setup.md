@@ -17,7 +17,7 @@ tags:
 
 > [!NOTE]
 > **사전 요구사항**
-> [개발자 필수 도구 설치](step-01)가 완료되어야 합니다.
+> [개발자 필수 도구 설치](macos-step01-essential-developer-tools)가 완료되어야 합니다.
 
 ## Git 기본 설정
 
@@ -285,4 +285,4 @@ gh pr create
 gh issue list
 ```
 
-[돌아가기](step-01)
+[돌아가기](macos-step01-essential-developer-tools)

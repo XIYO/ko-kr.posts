@@ -1,5 +1,5 @@
 ---
-title: Step 03
+title: 프로그래밍 언어
 authors:
   - XIYO
 dates:
@@ -8,7 +8,7 @@ tags:
   - mac-setup
   - java
   - openjdk
-  - programming-languages
+  - macos-step03-programming-languages
   - intellij
 ---
 
@@ -16,7 +16,7 @@ tags:
 
 > [!NOTE]
 > **사전 요구사항**
-> [Homebrew 설치](step-00)가 완료되어야 합니다.
+> [Homebrew 설치](macos-step00-homebrew-installation)가 완료되어야 합니다.
 
 ## Java 설치에 대한 조언
 
@@ -71,4 +71,4 @@ OpenJDK 64-Bit Server VM Homebrew (build 21.x.x, mixed mode, sharing)
 
 필요한 도구들이 모두 준비되었습니다! macOS를 더 효율적으로 사용하는 꿀팁을 알아보세요.
 
-[다음 단계: macOS 꿀팁 모음](step-04)
+[다음 단계: macOS 꿀팁 모음](macos-step04-advanced-configurations)

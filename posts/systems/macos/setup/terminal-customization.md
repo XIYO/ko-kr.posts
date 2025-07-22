@@ -17,7 +17,7 @@ tags:
 
 > [!NOTE]
 > **사전 요구사항**
-> [개발자 필수 도구 설치](step-01)가 완료되어야 합니다.
+> [개발자 필수 도구 설치](macos-step01-essential-developer-tools)가 완료되어야 합니다.
 
 ## Oh My Zsh란?
 
@@ -274,4 +274,4 @@ code ~/.p10k.zsh  # VS Code로 열기
 > 처음에는 그냥 기본 설정으로 사용하는 것을 권장합니다. 
 > 터미널에 익숙해진 후에 커스터마이징해보세요!
 
-[돌아가기](step-01)
+[돌아가기](macos-step01-essential-developer-tools)

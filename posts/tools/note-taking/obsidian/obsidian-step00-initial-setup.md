@@ -1,5 +1,5 @@
 ---
-title: Step 00
+title: 초기 설정
 authors:
   - XIYO
 dates:
@@ -217,4 +217,4 @@ Settings → Hotkeys에서 추가:
 
 기본 설정이 끝났다면:
 - [마크다운 기본 기능](markdown-basics) - Mermaid, LaTeX, Callout 등
-- [동기화 설정](step-01) - Git, Cloud, Obsidian Sync
+- [동기화 설정](obsidian-step01-sync-settings) - Git, Cloud, Obsidian Sync

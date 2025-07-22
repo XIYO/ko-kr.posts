@@ -1,5 +1,5 @@
 ---
-title: Step 01
+title: 필수 개발자 도구
 authors:
   - XIYO
 dates:
@@ -18,7 +18,7 @@ tags:
 
 > [!NOTE]
 > **사전 요구사항**
-> 이 가이드를 진행하기 전에 [Homebrew 설치](step-00)가 완료되어야 합니다.
+> 이 가이드를 진행하기 전에 [Homebrew 설치](macos-step00-homebrew-installation)가 완료되어야 합니다.
 
 ## 필수 도구 설치
 
@@ -95,4 +95,4 @@ brew install --cask font-pretendard
 
 필수 도구 설치가 완료되었습니다.
 
-[다음 단계: 시스템 유틸리티 설치](step-02)
+[다음 단계: 시스템 유틸리티 설치](macos-step02-system-utilities)

@@ -1,5 +1,5 @@
 ---
-title: Step 01
+title: 동기화 설정
 authors:
   - XIYO
 dates:
@@ -209,6 +209,8 @@ Settings → Obsidian Git에서:
 ## 다음 단계
 
 동기화 설정이 완료되었다면:
+<!-- 
 - [필수 플러그인 설치](step-02)
 - [고급 설정](step-03)
+-->
 
