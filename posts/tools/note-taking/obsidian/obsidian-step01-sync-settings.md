@@ -1,5 +1,6 @@
 ---
-title: 동기화 설정
+title: "Obsidian 동기화 설정"
+description: "멀티 기기 접근을 위한 Git, iCloud 또는 Obsidian Sync 설정"
 authors:
   - XIYO
 dates:

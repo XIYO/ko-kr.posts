@@ -1,5 +1,6 @@
 ---
-title: 시스템 유틸리티
+title: "시스템 유틸리티 설치"
+description: "Slack, Notion, Chrome, Rectangle 등 생산성 도구 및 시스템 유틸리티 설치"
 authors:
   - XIYO
 dates:

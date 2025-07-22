@@ -1,5 +1,6 @@
 ---
-title: 필수 개발자 도구
+title: "개발자 필수 도구 설치"
+description: "Git, Docker, VS Code, iTerm2 등 macOS 필수 개발 도구 설치"
 authors:
   - XIYO
 dates:

@@ -1,5 +1,6 @@
 ---
-title: 고급 설정
+title: "macOS 꿀팁 모음"
+description: "개발자를 위한 macOS 팁, 트릭 및 고급 설정"
 authors:
   - XIYO
 dates:

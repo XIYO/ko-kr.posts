@@ -1,5 +1,6 @@
 ---
-title: 프로그래밍 언어
+title: "프로그래밍 언어 설치"
+description: "Java 및 기타 프로그래밍 언어 개발 환경 설정"
 authors:
   - XIYO
 dates:

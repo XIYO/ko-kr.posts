@@ -1,5 +1,6 @@
 ---
-title: 초기 설정
+title: "Obsidian 설정 가이드"
+description: "효율적인 노트 작성을 위한 Obsidian 필수 설정 및 구성"
 authors:
   - XIYO
 dates:
