@@ -33,8 +33,6 @@ Docker는 이 모든 고통을 해결합니다. Oracle이 미리 설정해둔 �
 
 이 가이드는 Docker가 이미 설치되어 있다고 가정합니다. 시스템에 최소 2GB의 여유 메모리와 15GB의 디스크 공간이 필요합니다. Oracle은 가벼운 데이터베이스가 아닙니다.
 
-## 설치 과정
-
 ## Oracle 이미지 다운로드
 
 ### Container Registry의 세계
@@ -68,12 +66,17 @@ docker run -d \
   container-registry.oracle.com/database/free:latest
 ```
 
-> [!INFO]
-> - `-d`는 백그라운드에서 실행하라는 의미입니다. Oracle이 시작되는 동안 터미널을 계속 사용할 수 있습니다.
-> - `--name oracle-free`는 컨테이너에 이름을 부여합니다. 이 이름으로 컨테이너를 관리할 수 있습니다.
-> - `-p 1521:1521`은 Oracle의 기본 포트를 호스트에 연결합니다. 1521은 Oracle이 1984년부터 사용해온 전통적인 포트 번호입니다.
-> - `-p 5500:5500`은 Enterprise Manager Express라는 웹 관리 도구의 포트입니다. 브라우저로 Oracle을 관리하고 싶다면 필요합니다.
-> - `-e ORACLE_PWD=oracle123`은 관리자 비밀번호를 설정합니다. SYS, SYSTEM, PDBADMIN 세 계정 모두 이 비밀번호를 사용합니다.
+각 옵션이 하는 일을 설명하겠습니다.
+
+`-d`는 백그라운드에서 실행하라는 의미입니다. Oracle이 시작되는 동안 터미널을 계속 사용할 수 있습니다.
+
+`--name oracle-free`는 컨테이너에 이름을 부여합니다. 이 이름으로 컨테이너를 관리할 수 있습니다.
+
+`-p 1521:1521`은 Oracle의 기본 포트를 호스트에 연결합니다. 1521은 Oracle이 1984년부터 사용해온 전통적인 포트 번호입니다.
+
+`-p 5500:5500`은 Enterprise Manager Express라는 웹 관리 도구의 포트입니다. 브라우저로 Oracle을 관리하고 싶다면 필요합니다.
+
+`-e ORACLE_PWD=oracle123`은 관리자 비밀번호를 설정합니다. SYS, SYSTEM, PDBADMIN 세 계정 모두 이 비밀번호를 사용합니다.
 
 ### 고급 설정 옵션
 
@@ -111,14 +114,13 @@ docker logs -f oracle-free
 
 ## 접속 정보 정리
 
-Oracle 컨테이너가 준비되면 다음 정보로 접속할 수 있습니다:
+Oracle 컨테이너가 준비되면 다음 정보로 접속할 수 있습니다.
 
-- **호스트**: localhost (같은 컴퓨터에서 접속할 때)
-- **포트**: 1521
-- **Service Name**: FREEPDB1 (PDB에 접속)
-- **SID**: FREE (CDB 전체에 접속, DBA용)
-- **사용자**: system 또는 sys
-- **비밀번호**: oracle123 (위에서 설정한 값)
+호스트는 localhost를 사용합니다. 같은 컴퓨터에서 접속할 때의 기본값입니다. 포트는 1521을 사용합니다.
+
+Service Name으로는 FREEPDB1을 사용하면 PDB에 접속할 수 있고, SID로 FREE를 사용하면 CDB 전체에 접속할 수 있습니다. DBA 작업을 할 때는 주로 SID를 사용합니다.
+
+사용자 계정은 system 또는 sys를 사용할 수 있으며, 비밀번호는 위에서 설정한 oracle123입니다.
 
 JDBC URL 형식으로는 다음과 같이 작성합니다:
 ```
