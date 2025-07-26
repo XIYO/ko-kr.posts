@@ -14,185 +14,180 @@ tags:
 
 # 오라클 0단계 개념
 
-## Oracle이란?
+## Oracle Database가 특별한 이유
 
-Oracle은 원래 기업 이름이지만, Oracle Database가 너무 유명해져서 일반적으로 "Oracle"이라고 하면 Oracle Database를 지칭하는 대명사가 되었습니다.
+Oracle Database는 다른 데이터베이스와 근본적으로 다른 설계 철학을 가지고 있습니다. PostgreSQL이나 MySQL을 알고 있다면, Oracle을 처음 접했을 때 "왜 이렇게 만들었지?"라는 의문이 들 것입니다.
 
-### Oracle Corporation의 주요 제품
+이 문서는 Oracle만의 독특한 개념들이 왜 존재하는지, 어떻게 진화했는지를 설명합니다. 비싼 라이센스 비용 때문에 주로 자금력 있는 대기업이나 레거시 시스템에서 사용되지만, 데이터베이스 아키텍처를 이해하는 데는 훌륭한 학습 대상입니다.
 
-- **Oracle Database**: 관계형 데이터베이스 관리 시스템 (RDBMS)
-- **Oracle Linux**: 기업용 Linux 운영체제
-- **Java**: 프로그래밍 언어 및 플랫폼
-- **MySQL**: 오픈소스 데이터베이스
-- **VirtualBox**: 가상화 소프트웨어
-- **WebLogic Server**: 애플리케이션 서버
+## Oracle만의 독특한 개념 1: User = Schema
 
-## Oracle Database의 역사와 버전 체계
+대부분의 데이터베이스에서 Schema는 테이블을 그룹화하는 논리적 컨테이너입니다. 그런데 Oracle은 다릅니다.
 
-Oracle Database는 1977년 Larry Ellison이 창업한 Software Development Laboratories에서 시작되었습니다. 최초의 상용 관계형 데이터베이스 관리 시스템(RDBMS) 중 하나로, IBM의 System R 논문을 바탕으로 개발되었습니다.
+| 데이터베이스 | 테이블 그룹화 방법 | 실제 명령어 |
+|------------|------------------|------------|
+| PostgreSQL | Database > Schema > Table | CREATE SCHEMA sales; |
+| MySQL | Database = Schema | CREATE DATABASE sales; |
+| **Oracle** | **User = Schema** | CREATE USER sales IDENTIFIED BY...; |
 
-### 버전과 에디션의 차이
+Oracle의 설계 철학은 단순했습니다: "각 사용자가 자신만의 테이블 공간을 가지면 되지 않나?" 
 
-Oracle에서는 **버전**과 **에디션**을 명확히 구분해야 합니다:
+결과적으로:
+- sales라는 사용자를 만들면 → sales 스키마가 자동 생성
+- hr이라는 사용자를 만들면 → hr 스키마가 자동 생성
+- **한 사용자는 정확히 하나의 스키마만 소유**
 
-- **버전**: 시간에 따른 기능 발전 (11g, 12c, 19c, 21c, 23c)
-- **에디션**: 같은 버전 내 라이센스별 기능 차이 (Free, Standard, Enterprise)
+> [!WARNING]
+> Oracle의 CREATE SCHEMA 명령어는 다른 DB와 다릅니다!
+> 스키마를 생성하는 것이 아니라, 한 트랜잭션 내에서 여러 테이블을 한번에 생성하는 명령어입니다.
+> PostgreSQL의 CREATE SCHEMA와는 완전히 다른 기능을 수행합니다.
 
-예시: Oracle 23c (버전)는 Free Edition, Standard Edition 2, Enterprise Edition (에디션)으로 제공됩니다.
+## Oracle만의 독특한 개념 2: 멀티테넌트 아키텍처
 
-### 주요 버전별 특징
+Oracle은 12c에서 "멀티테넌트"라는 새로운 아키텍처를 도입했습니다. 흥미롭게도 PostgreSQL과 MySQL은 처음부터 하나의 인스턴스에서 여러 데이터베이스를 관리할 수 있었습니다.
 
-- **Oracle 7** (1992): 저장 프로시저, 트리거 도입
-- **Oracle 8** (1997): 객체-관계형 기능 추가
-- **Oracle 8i** (1999): 인터넷 컴퓨팅 지원, **Service Name 도입**
-- **Oracle 9i** (2001): Real Application Clusters (RAC) 도입
-- **Oracle 10g** (2003): 그리드 컴퓨팅 지원
-- **Oracle 11g** (2007): 자동 메모리 관리, 압축 기능
-- **Oracle 12c** (2013): **멀티테넌트 아키텍처 (CDB/PDB) 도입**
-- **Oracle 18c** (2018): 자율 운영 데이터베이스 기능
-- **Oracle 19c** (2019): 장기 지원 버전 (LTS)
-- **Oracle 21c** (2021): 블록체인 테이블, 자동 인덱싱
-- **Oracle 23c** (2023): **Free Edition 출시**, AI 벡터 검색
+Oracle이 늦은 이유는 아키텍처 차이 때문입니다:
 
-### 버전 명명 규칙의 변화
+**다른 DB**: Instance → 여러 Database → 여러 Schema
+**Oracle 11g까지**: Instance = Database (1:1 관계)
 
-- **i** (internet): 8i, 9i - 인터넷 시대를 반영
-- **g** (grid): 10g, 11g - 그리드 컴퓨팅 시대를 반영
-- **c** (cloud): 12c부터 현재까지 - 클라우드 시대를 반영
+Oracle은 이 구조적 차이를 해결하기 위해 CDB/PDB 구조를 도입하고, 이를 "멀티테넌트"라고 명명했습니다:
+- **CDB (Container Database)**: 전체를 감싸는 컨테이너
+- **PDB (Pluggable Database)**: 독립적으로 관리되는 개별 데이터베이스
 
-18c부터는 연도 기반 버전 체계로 변경되었습니다 (18c = 2018년, 19c = 2019년, 21c = 2021년, 23c = 2023년).
+이제야 다른 DB처럼 하나의 인스턴스에서 여러 데이터베이스를 관리할 수 있게 된 것입니다.
 
-### 에디션별 특징과 제약사항
+## 파일 구조로 이해하는 Oracle의 진화
 
-#### 무료 에디션
+데이터베이스의 본질은 결국 파일입니다. Oracle의 진화를 파일 관점에서 보면 왜 이런 개념들이 생겨났는지 이해할 수 있습니다.
 
-**Express Edition (XE)** - 레거시 무료 버전
-- CPU: 최대 2 코어, RAM: 최대 2GB, 데이터: 최대 12GB
-- 오래된 버전으로 신규 프로젝트에는 비권장
+### Oracle 11g 이전: 하나의 거대한 파일 덩어리
 
-**Free Edition (23c)** - 최신 무료 버전
-- CPU: 최대 2 스레드, 메모리: 최대 4GB (SGA+PGA), 데이터: 최대 12GB
-- XE를 대체하는 개발자용 에디션
+초기 Oracle은 모든 데이터를 하나의 파일 세트에 저장했습니다. /oradata/ORCL/ 디렉토리를 보면:
+- system01.dbf (시스템 정보)
+- users01.dbf (사용자 데이터)
+- temp01.dbf (임시 데이터)
 
-> [!TIP]
-> 새로 시작한다면 Free Edition을 사용하세요. XE는 레거시 시스템 호환성이 필요한 경우에만 사용합니다.
+모든 사용자의 데이터가 이 파일들에 뒤섞여 저장됩니다. User1의 테이블도, User2의 테이블도 모두 같은 users01.dbf 파일 안에 있습니다.
 
-#### 상용 에디션
+**문제 상황**: "User1의 데이터만 다른 서버로 옮겨주세요"
 
-**Standard Edition 2 (SE2)** - 중소기업용
-- CPU: 최대 2 소켓, RAC 미지원
-- Enterprise보다 저렴하지만 고급 기능 제한
+이게 얼마나 고통스러운 작업인지 상상해보세요:
+1. 거대한 파일을 열어서
+2. User1의 테이블들을 하나하나 찾아서
+3. 데이터를 추출(Export)하고
+4. 새 서버에서 다시 생성(Import)
 
-**Enterprise Edition (EE)** - 대기업용
-- 모든 기능 사용 가능, 제한 없음
-- RAC, Partitioning, Advanced Security 등 포함
-- 최소 수천만원부터 시작하는 고가 라이센스
+마치 여러 사람의 물건이 뒤섞인 창고에서 특정 사람의 물건만 골라내는 것과 같습니다.
+
+### Oracle 12c 이후: 독립된 파일로 분리
+
+Oracle도 결국 깨달았습니다. "파일을 분리하면 되잖아?"
+
+CDB/PDB 구조에서는:
+- /oradata/CDB/PDB1/users01.dbf (PDB1 전용)
+- /oradata/CDB/PDB2/users01.dbf (PDB2 전용)
+
+각 PDB가 자신만의 파일을 가집니다. 이제 데이터 이전이 간단해졌습니다:
+
+**문제 상황**: "PDB1을 다른 서버로 옮겨주세요"
+1. PDB1 폴더를 통째로 복사
+2. 새 서버에 붙여넣기
+3. 메타데이터 등록
+
+파일이 물리적으로 분리되어 있으니 복사-붙여넣기가 가능해진 것입니다.
 
 > [!INFO]
-> Oracle의 높은 라이센스 비용 때문에 많은 기업이 PostgreSQL, MySQL 등 오픈소스를 선택합니다.
-
-## Oracle 아키텍처의 진화 - 파일 관점에서 이해하기
-
-### Oracle 11g 이전 - 모든 데이터가 하나의 파일 세트에
-
-Oracle 11g 이전에는 하나의 인스턴스가 하나의 데이터베이스를 관리했습니다. 모든 사용자(User1, User2, User3)의 데이터는 동일한 파일 세트(/oradata/ORCL/users.dbf)에 저장되었고, 각 사용자는 논리적으로만 구분되는 스키마로 존재했습니다.
-
-**데이터 이전 시나리오**: "User1 데이터만 다른 서버로 이전해주세요"
-
-1. users.dbf 파일 열기
-2. User1의 테이블 찾기
-3. 데이터를 하나하나 추출 (Export)
-4. 새 서버에서 하나하나 삽입 (Import)
-
-> 파일을 열어서 필요한 부분만 긁어내는 작업
-
-### Oracle 12c 이후 - 각 PDB별로 독립된 파일
-
-Oracle 12c부터는 하나의 인스턴스가 CDB(Container Database)를 통해 여러 PDB(Pluggable Database)를 관리합니다. PDB1은 독립된 파일(/oradata/CDB/PDB1/users.dbf)에 User1과 User2의 데이터를 저장하고, PDB2는 별도의 파일(/oradata/CDB/PDB2/users.dbf)에 User3과 User4의 데이터를 저장합니다. 각 PDB가 물리적으로 독립된 파일을 가집니다.
-
-**데이터 이전 시나리오**: "PDB1 데이터를 다른 서버로 이전해주세요"
-
-1. PDB1 폴더 통째로 복사
-2. 새 서버에 붙여넣기
-3. 끝!
-
-> 파일 자체가 분리되어 있어 복사-붙여넣기로 끝
-
-> [!NOTE]
-> **.dbf 파일을 Oracle은 "테이블스페이스"라고 브랜딩합니다**
+> **테이블스페이스의 정체**
 > 
-> 실제로는 CSV 파일처럼 데이터를 저장하는 파일입니다 (Oracle 전용 도구로만 읽을 수 있는 바이너리 형식).
-> - system.dbf = SYSTEM 테이블스페이스
-> - users.dbf = USERS 테이블스페이스
-> - sysaux.dbf = SYSAUX 테이블스페이스
+> .dbf 파일을 Oracle은 "테이블스페이스"라고 부릅니다. 이는 데이터 파일을 논리적으로 관리하는 Oracle의 방식입니다.
+> - system.dbf → SYSTEM 테이블스페이스
+> - users.dbf → USERS 테이블스페이스
 > 
-> 다른 DB는 그냥 "데이터 파일"이라고 부르는데, Oracle은 브랜딩을 위해 "테이블스페이스"라고 부릅니다.
+> 다른 DB는 단순히 "데이터 파일"이라고 부르는 반면, Oracle은 고유한 관리 체계를 반영하여 "테이블스페이스"라는 용어를 사용합니다.
 
-## SID와 Service Name
+## SID에서 Service Name으로: 접속 방식의 진화
 
-앞서 살펴본 Oracle의 파일 구조 변화는 데이터베이스 접속 방법에도 큰 변화를 가져왔습니다. 파일이 분리되면서 각각을 식별하고 접속하는 방법도 진화해야 했습니다.
+파일 구조가 바뀌면서 데이터베이스를 찾는 방법도 진화해야 했습니다.
 
-### 초기: 파일 세트 전체를 가리키는 SID
+### 1단계: SID - 단순했던 시절 (Oracle 8 이전)
 
-Oracle 11g 이전에는 /oradata/ORCL/ 디렉토리의 모든 파일이 하나의 데이터베이스였습니다. 이 전체 파일 세트를 관리하는 인스턴스를 식별하는 이름이 바로 **SID(System Identifier)**였습니다. ORCL이라는 SID로 접속하면 해당 디렉토리의 모든 데이터에 접근할 수 있었습니다.
+초기에는 간단했습니다. 하나의 인스턴스가 하나의 데이터베이스 파일 세트를 관리했고, 이를 식별하는 이름이 **SID(System Identifier)**였습니다.
 
-### Oracle 8i (1999년): Service Name 등장 - 별명의 필요성
+- ORCL이라는 SID = /oradata/ORCL/ 디렉토리
+- XE라는 SID = /oradata/XE/ 디렉토리
 
-**문제 상황**:
+접속할 때도 단순히 "ORCL에 연결해줘"라고 하면 끝이었습니다.
 
-하나의 Oracle 인스턴스(SID: ORCL)에 영업팀 100명, 인사팀 50명, 그리고 야간 배치 프로세스가 모두 동시에 접속하는 상황을 생각해보세요. 모든 접속이 동일한 ORCL이라는 식별자로만 보이기 때문에 누가 데이터베이스를 느리게 만드는지 알 수 없고, 부서별로 리소스를 제한할 방법도 없었습니다.
+### 2단계: Service Name 도입 - 통계와 관리의 필요성 (Oracle 8i)
 
-**해결책: Service Name (별명 시스템)**:
+기업이 성장하면서 문제가 생겼습니다. 하나의 데이터베이스(ORCL)에 수백 명이 접속하는데, 모두가 "ORCL"로만 보입니다.
 
-Oracle은 여전히 하나의 데이터베이스(SID: ORCL)를 유지하면서도, 영업팀은 SALES_SVC, 인사팀은 HR_SVC, 배치 프로세스는 BATCH_SVC라는 별명으로 접속하도록 했습니다. 이를 통해 접속 통계를 분리하고, Resource Manager를 이용한 그룹별 리소스 제한과 QoS(Quality of Service) 관리가 가능해졌습니다.
+**실제 상황**:
+- 영업팀 100명이 ORCL에 접속
+- 인사팀 50명이 ORCL에 접속  
+- 야간 배치 작업이 ORCL에 접속
+- 데이터베이스가 느려지면? 누구 때문인지 알 수 없음
 
-### Oracle 12c (2013년): Service Name의 진화 - 진짜 분리
+Oracle의 해결책은 **Service Name**이라는 별명 시스템이었습니다:
+- 영업팀 → SALES_SVC라는 이름으로 접속
+- 인사팀 → HR_SVC라는 이름으로 접속
+- 배치 → BATCH_SVC라는 이름으로 접속
 
-**구조의 변화**:
+실제로는 모두 같은 ORCL 데이터베이스에 접속하지만, 이제 "SALES_SVC가 리소스의 80%를 사용 중"같은 통계를 볼 수 있게 되었습니다.
 
-11g까지는 하나의 인스턴스가 하나의 데이터베이스를 관리했고, 여러 Service Name은 모두 같은 데이터베이스를 가리키는 별명에 불과했습니다.
+### 3단계: Service Name의 진짜 의미 - 독립된 데이터베이스 (Oracle 12c)
 
-12c부터는 하나의 인스턴스가 CDB를 관리하고, 그 안에 여러 개의 독립적인 PDB가 존재합니다. PDB1은 FREEPDB1이라는 Service Name을, PDB2는 MYPDB라는 Service Name을, PDB3는 TESTPDB라는 Service Name을 가집니다. 이제 Service Name이 실제로 서로 다른 데이터베이스를 가리키게 된 것입니다.
+CDB/PDB 구조가 도입되면서 Service Name의 의미가 완전히 바뀌었습니다.
 
-**접속 방식의 변화**:
-- SID로 접속 → CDB(관리자용)
-- Service Name으로 접속 → 각각의 PDB(사용자용)
+**이전 (11g까지)**:
+- 하나의 데이터베이스에 여러 Service Name
+- 모두 같은 곳을 가리키는 별명들
 
-> [!NOTE]
-> Service Name의 본질은 여전히 "별명"입니다.
-> - 8i~11g: 같은 DB의 여러 별명
-> - 12c~: 독립된 PDB의 별명
+**이후 (12c부터)**:
+- CDB 안에 여러 개의 독립된 PDB
+- 각 PDB가 고유한 Service Name을 가짐
+- FREEPDB1 = 실제로 독립된 데이터베이스
+- MYPDB = 또 다른 독립된 데이터베이스
+
+Service Name이 단순한 별명에서 실제 데이터베이스를 가리키는 주소가 된 것입니다.
+
+> [!TIP]
+> **현재 Oracle 접속 방식**
+> - SID 접속: CDB 전체에 접근 (주로 DBA용)
+> - Service Name 접속: 특정 PDB에 접근 (일반 사용자용)
 > 
-> 하나의 PDB에도 여러 Service Name을 만들 수 있습니다.
-## Oracle의 독특한 스키마 개념: User = Schema
+> 새로운 프로젝트라면 무조건 Service Name을 사용하세요.
+## 버전과 에디션: 시간과 돈의 차이
 
-### 핵심: Oracle User가 다른 DB의 Schema에 해당
+### 버전 = 시간의 흐름
 
-| 데이터베이스 | 테이블을 그룹화하는 방법 | 명령어 |
-|------------|----------------------|--------|
-| PostgreSQL | Schema (Database 안에 여러 개) | CREATE SCHEMA sales; |
-| MySQL | Database = Schema | CREATE DATABASE sales; |
-| **Oracle** | **User = Schema** | CREATE USER sales ...; |
+Oracle 버전은 시대를 반영합니다:
+- **i (internet)**: 8i, 9i - 닷컴 버블 시대
+- **g (grid)**: 10g, 11g - 분산 컴퓨팅 시대  
+- **c (cloud)**: 12c 이후 - 클라우드 시대
 
-### 왜 Oracle은 User = Schema인가?
+주요 변곡점:
+- **8i (1999)**: Service Name 도입
+- **12c (2013)**: CDB/PDB (멀티테넌트) 도입
+- **23c (2023)**: 드디어 쓸만한 무료 버전 출시
 
-다른 DB: "테이블을 어떻게 그룹화할까?" → Schema 개념 도입
-Oracle: "각 사용자가 자기 테이블을 가지면 되지" → User = Schema
+### 에디션 = 지갑의 두께
 
-결과:
-- sales 사용자 생성 = sales 스키마 자동 생성
-- hr 사용자 생성 = hr 스키마 자동 생성
+같은 23c 버전이라도 얼마를 내느냐에 따라 다릅니다:
 
+**무료 에디션**:
+- Express Edition (XE): 오래된 무료 버전, 제약 많음
+- Free Edition (23c): 최신 무료 버전, XE 대체용
 
-> [!NOTE]
-> **Oracle의 CREATE SCHEMA 명령어의 진실**
-> 
-> Oracle에도 CREATE SCHEMA 명령어는 존재하지만, 이것은 **새 스키마를 만드는 명령어가 아닙니다**.
-> - 실제로는 **한 트랜잭션 내에서 여러 테이블과 뷰를 한번에 생성**하는 명령어
-> - 스키마는 여전히 User 생성 시 자동으로만 만들어짐
-> - PostgreSQL의 CREATE SCHEMA와는 완전히 다른 기능
-> 
-> **중요**: Oracle에서는 1 User = 1 Schema입니다. 한 사용자가 여러 스키마를 가질 수 없고, 스키마 없는 사용자도 있을 수 없습니다.
+**유료 에디션**:
+- Standard Edition 2: 중소기업용, 기능 제한
+- Enterprise Edition: 대기업용, 모든 기능, 엄청난 가격
+
+> [!WARNING]
+> Oracle Enterprise Edition은 CPU 코어당 라이센스를 책정합니다.
+> 8코어 서버라면 수억원의 라이센스 비용이 발생할 수 있습니다.
+> 그래서 많은 기업이 PostgreSQL이나 MySQL로 이전합니다.
 
 ## 다음 단계
 
