@@ -33,11 +33,7 @@ Docker는 이 모든 고통을 해결합니다. Oracle이 미리 설정해둔 �
 
 이 가이드는 Docker가 이미 설치되어 있다고 가정합니다. 시스템에 최소 2GB의 여유 메모리와 15GB의 디스크 공간이 필요합니다. Oracle은 가벼운 데이터베이스가 아닙니다.
 
-## 설치 과정 시연
-
-다음 asciinema 녹화에서 전체 설치 과정을 확인할 수 있습니다:
-
-[![asciicast](https://asciinema.xiyo.dev/a/TMALoHqaToMJOxlT9EXnMEsi6.svg)](https://asciinema.xiyo.dev/a/TMALoHqaToMJOxlT9EXnMEsi6)
+## 설치 과정
 
 ## Oracle 이미지 다운로드
 
@@ -72,17 +68,12 @@ docker run -d \
   container-registry.oracle.com/database/free:latest
 ```
 
-명령어의 각 부분이 하는 일을 살펴보겠습니다.
-
-`-d`는 백그라운드에서 실행하라는 의미입니다. Oracle이 시작되는 동안 터미널을 계속 사용할 수 있습니다.
-
-`--name oracle-free`는 컨테이너에 이름을 부여합니다. 이 이름으로 컨테이너를 관리할 수 있습니다.
-
-`-p 1521:1521`은 Oracle의 기본 포트를 호스트에 연결합니다. 1521은 Oracle이 1984년부터 사용해온 전통적인 포트 번호입니다.
-
-`-p 5500:5500`은 Enterprise Manager Express라는 웹 관리 도구의 포트입니다. 브라우저로 Oracle을 관리하고 싶다면 필요합니다.
-
-`-e ORACLE_PWD=oracle123`은 관리자 비밀번호를 설정합니다. SYS, SYSTEM, PDBADMIN 세 계정 모두 이 비밀번호를 사용합니다.
+> [!INFO]
+> - `-d`는 백그라운드에서 실행하라는 의미입니다. Oracle이 시작되는 동안 터미널을 계속 사용할 수 있습니다.
+> - `--name oracle-free`는 컨테이너에 이름을 부여합니다. 이 이름으로 컨테이너를 관리할 수 있습니다.
+> - `-p 1521:1521`은 Oracle의 기본 포트를 호스트에 연결합니다. 1521은 Oracle이 1984년부터 사용해온 전통적인 포트 번호입니다.
+> - `-p 5500:5500`은 Enterprise Manager Express라는 웹 관리 도구의 포트입니다. 브라우저로 Oracle을 관리하고 싶다면 필요합니다.
+> - `-e ORACLE_PWD=oracle123`은 관리자 비밀번호를 설정합니다. SYS, SYSTEM, PDBADMIN 세 계정 모두 이 비밀번호를 사용합니다.
 
 ### 고급 설정 옵션
 
