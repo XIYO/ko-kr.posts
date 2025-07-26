@@ -10,7 +10,7 @@ authors:
 tags: obsidian, markdown, mermaid, latex, codeblock
 ---
 
-# Obsidian 기본 마크다운 기능
+# 마크다운 기초
 
 > [!NOTE]
 > 플러그인 없이 Obsidian에서 기본적으로 사용할 수 있는 코드 블록 기능들입니다.

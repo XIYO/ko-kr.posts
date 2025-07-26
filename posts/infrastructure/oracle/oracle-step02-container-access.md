@@ -14,7 +14,7 @@ tags:
   - troubleshooting
 ---
 
-# Oracle 컨테이너 접속 가이드
+# 오라클 2단계 컨테이너 접속
 
 ## IntelliJ Ultimate DataGrip 접속 설정
 

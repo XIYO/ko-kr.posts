@@ -11,7 +11,7 @@ authors:
 tags: obsidian, sync, git, cloud, backup
 ---
 
-# Obsidian 동기화 설정
+# 옵시디언 1단계 동기화 설정
 
 > [!NOTE]
 > **여러 기기에서 노트 동기화하기**

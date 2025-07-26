@@ -14,7 +14,7 @@ authors:
 tags: obsidian, settings, essential, first-setup
 ---
 
-# Obsidian 설정 가이드
+# 옵시디언 0단계 초기 설정
 
 Obsidian은 마크다운 기반의 강력한 노트 앱입니다. 로컬 파일로 저장되어 영구적으로 소유할 수 있고, 링크와 그래프 뷰를 통해 지식을 연결하여 관리할 수 있습니다. 개발 문서, 학습 노트, 아이디어를 체계적으로 정리하는데 최적화되어 있습니다.
 
