@@ -1,12 +1,11 @@
 ---
 title: 콜아웃 테스트
-description: rehype-callouts Obsidian 테마 테스트
+dates:
+  - "2025-07-21T17:34:17.000Z"
 authors:
   - XIYO
-dates:
-  - '2025-07-20T12:00:00.000Z'
-created: '2025-07-20T12:00:00.000Z'
-modified: '2025-07-20T12:00:00.000Z'
+created: "2025-07-20T12:00:00.000Z"
+modified: "2025-07-20T12:00:00.000Z"
 ---
 
 # 콜아웃 테스트

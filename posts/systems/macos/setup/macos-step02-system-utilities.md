@@ -1,10 +1,13 @@
 ---
-title: "시스템 유틸리티 설치"
-description: "Slack, Notion, Chrome, Rectangle 등 생산성 도구 및 시스템 유틸리티 설치"
+title: 시스템 유틸리티 설치
+dates:
+  - "2025-07-22T16:09:12.000Z"
+  - "2025-07-22T15:45:32.000Z"
+  - "2025-07-21T19:25:39.000Z"
+  - "2025-07-21T15:45:51.000Z"
+  - "2025-07-21T15:14:46.000Z"
 authors:
   - XIYO
-dates:
-  - Thu Jul 17 2025 09:00:00 GMT+0900 (대한민국 표준시)
 tags:
   - mac-setup
   - productivity

@@ -1,10 +1,14 @@
 ---
-title: "Mac 초기 설정 가이드"
-description: "Apple Silicon Mac에 Homebrew 패키지 관리자 설치 - 개발 환경 구성의 필수 첫 단계"
+title: Mac 초기 설정 가이드
+description: 이 가이드는 Apple Silicon Mac을 위한 개발 환경 설정 문서입니다. Intel Mac을 위한 설정 방법은 다루지 않습니다.
+dates:
+  - "2025-07-22T16:09:12.000Z"
+  - "2025-07-22T15:45:32.000Z"
+  - "2025-07-21T19:25:39.000Z"
+  - "2025-07-21T15:45:51.000Z"
+  - "2025-07-21T15:14:46.000Z"
 authors:
   - XIYO
-dates:
-  - Thu Jul 17 2025 09:00:00 GMT+0900 (대한민국 표준시)
 tags:
   - mac-setup
   - homebrew

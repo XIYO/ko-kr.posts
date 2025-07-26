@@ -3,29 +3,18 @@ title: ACME 인증서 발급 자동화 (ASUS AC88U 라우터)
 description: >-
   AC88U 라우터에 Nginx를 설치하고 SSL 인증서를 설정해두었지만, 매번 수동으로 인증서를 발급하는 과정에서 정리가 되지 않아 이번
   기회에 완전히 정리한 후기를 남깁니다.
+dates:
+  - "2025-07-21T15:45:51.000Z"
+  - "2025-07-21T15:14:46.000Z"
+  - "2025-07-21T14:15:35.000Z"
+  - "2025-06-15T06:10:59.000Z"
+  - "2025-03-09T13:09:55.000Z"
+  - "2025-03-09T13:02:28.000Z"
+  - "2025-03-09T11:42:21.000Z"
+  - "2025-02-16T14:12:50.000Z"
+  - "2025-02-16T14:11:19.000Z"
 authors:
   - XIYO
-  - XIYO
-  - XIYO
-  - XIYO
-  - XIYO
-dates:
-  - 2025-03-09T22:09+0900
-  - 2025-03-09T22:02+0900
-  - 2025-03-09T20:42+0900
-  - 2025-02-16T23:12+0900
-  - 2025-02-16T23:11+0900
-tags: []
-messages:
-  - ':memo: Cloudflare 토큰 발급 페이지 링크 추가 및 스크립트 설명 수정'
-  - ':memo: 투 슬래시 문법 추가'
-  - ':memo: 말이 되도록 변경'
-  - >-
-    :art: improve clarity in ACME certificate issuance guide by refining
-    language and formatting
-  - >-
-    :art: add guide for automating ACME certificate issuance on ASUS AC88U
-    router
 ---
 # ACME 인증서 발급 자동화 (ASUS AC88U 라우터)
 

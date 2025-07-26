@@ -1,5 +1,14 @@
 ---
-title: Oracle Docker Installation Guide
+title: Oracle Docker Quick Install Guide
+description: 이 가이드는 Docker를 사용하여 Oracle Database Free Edition을 빠르게 설치하는 방법을 설명합니다.
+dates:
+  - "2025-07-21T19:25:39.000Z"
+  - "2025-07-21T17:41:12.000Z"
+  - "2025-07-21T17:40:16.000Z"
+  - "2025-07-21T15:45:51.000Z"
+  - "2025-07-21T15:14:46.000Z"
+authors:
+  - XIYO
 tags:
   - docker
   - oracle

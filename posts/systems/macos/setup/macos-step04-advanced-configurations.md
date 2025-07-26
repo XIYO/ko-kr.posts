@@ -1,10 +1,12 @@
 ---
-title: "macOS 꿀팁 모음"
-description: "개발자를 위한 macOS 팁, 트릭 및 고급 설정"
+title: macOS 꿀팁 모음
+dates:
+  - "2025-07-22T16:09:12.000Z"
+  - "2025-07-22T15:45:32.000Z"
+  - "2025-07-21T15:45:51.000Z"
+  - "2025-07-21T15:14:46.000Z"
 authors:
   - XIYO
-dates:
-  - Thu Jul 17 2025 09:00:00 GMT+0900 (대한민국 표준시)
 tags:
   - mac-setup
   - macos-tips
