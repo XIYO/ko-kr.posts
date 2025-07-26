@@ -37,7 +37,7 @@ Docker는 이 모든 고통을 해결합니다. Oracle이 미리 설정해둔 �
 
 다음 asciinema 녹화에서 전체 설치 과정을 확인할 수 있습니다:
 
-[![asciicast](https://asciinema.xiyo.dev/a/x05qwiHfW8tjaJClBDlSsyA6r.svg)](https://asciinema.xiyo.dev/a/x05qwiHfW8tjaJClBDlSsyA6r)
+[![asciicast](https://asciinema.xiyo.dev/a/TMALoHqaToMJOxlT9EXnMEsi6.svg)](https://asciinema.xiyo.dev/a/TMALoHqaToMJOxlT9EXnMEsi6)
 
 ## Oracle 이미지 다운로드
 
