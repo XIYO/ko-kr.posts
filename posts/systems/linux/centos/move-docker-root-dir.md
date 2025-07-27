@@ -3,8 +3,8 @@ title: 도커 루트 디렉토리 이전
 description: 사내 클라우드 서버에 깃랩을 올려서 사용중이이었습니다. \
 authors:
   - XIYO
-lastModified: 2025-07-26T11:55:18+09:00
-published: 2025-07-22T00:45:51+09:00
+lastModified: 2025-07-27T21:20:48Z
+published: 2024-03-18T22:01:10Z
 ---
 # 도커 루트 디렉토리 이전
 

@@ -3,8 +3,8 @@ title: macOS에서 IntelliJ 의 프로젝트를 탭으로 열리게 설정하는
 description: macOS에서 IntelliJ IDEA의 프로젝트 열기를 항상 탭으로 설정하는 방법을 알아봅니다.
 authors:
   - XIYO
-lastModified: 2025-07-27T21:08:31+09:00
-published: 2025-07-22T00:45:51+09:00
+lastModified: 2025-07-27T21:20:48Z
+published: 2025-04-13T13:40:32Z
 ---
 # macOS에서 IntelliJ 의 프로젝트를 탭으로 열리게 설정하는 방법
 

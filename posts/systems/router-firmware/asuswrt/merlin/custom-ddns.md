@@ -3,8 +3,8 @@ title: CUSTOM DDNS
 description: asuswrt-merlin 펌웨어에서 커스텀 도메인을 연결하는 방법을 정리합니다.
 authors:
   - XIYO
-lastModified: 2025-07-26T11:55:18+09:00
-published: 2025-07-22T00:45:51+09:00
+lastModified: 2025-07-27T21:20:48Z
+published: 2024-03-16T16:54:31Z
 ---
 # CUSTOM DDNS
 

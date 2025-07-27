@@ -3,8 +3,8 @@ title: LOCK DESKTOP SPACE
 description: 미션 컨트롤의 데스크톱 스페이스를 잠그는 방법을 알아봅니다.
 authors:
   - XIYO
-lastModified: 2025-07-26T11:55:18+09:00
-published: 2025-07-22T00:45:51+09:00
+lastModified: 2025-07-27T21:20:48Z
+published: 2023-10-27T13:47:02Z
 ---
 # LOCK DESKTOP SPACE
 

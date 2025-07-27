@@ -4,8 +4,8 @@ description: 객체의 깊은 복사가 필요한 일이 생겼습니다. \
 authors:
   - XIYO
   - 이요
-lastModified: 2025-07-27T21:08:31+09:00
-published: 2025-07-22T00:45:51+09:00
+lastModified: 2025-07-27T21:20:48Z
+published: 2024-03-23T20:31:54Z
 ---
 # 배열을 정확히 검증하는 방법
 

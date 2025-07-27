@@ -3,8 +3,8 @@ title: INSTALL TRANSMISSION ON ASUSWRT
 description: 트랜스미션을 설치하고 원격으로 토렌트를 관리하는 방법을 알아봅니다.
 authors:
   - XIYO
-lastModified: 2025-07-26T11:55:18+09:00
-published: 2025-07-22T00:45:51+09:00
+lastModified: 2025-07-27T21:20:48Z
+published: 2023-11-12T22:29:23Z
 ---
 # INSTALL TRANSMISSION ON ASUSWRT
 

@@ -4,8 +4,8 @@ description: 안녕하세요, 저는 웹을 사랑하는 개발자입니다.
 authors:
   - XIYO
   - xiyo
-lastModified: 2025-07-26T11:55:18+09:00
-published: 2023-01-26T17:55:59+09:00
+lastModified: 2025-07-27T21:20:48Z
+published: 2024-03-12T20:50:16Z
 ---
 # ABOUT
 

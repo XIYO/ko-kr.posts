@@ -3,8 +3,8 @@ title: WinGet 실행 오류 해결 방법
 description: 컴퓨터가 느려져서 오랜만에 윈도우를 새로 설치했습니다.
 authors:
   - XIYO
-lastModified: 2025-07-26T11:55:18+09:00
-published: 2025-07-22T00:45:51+09:00
+lastModified: 2025-07-27T21:20:48Z
+published: 2024-03-23T23:46:38Z
 ---
 # WinGet 실행 오류 해결 방법
 

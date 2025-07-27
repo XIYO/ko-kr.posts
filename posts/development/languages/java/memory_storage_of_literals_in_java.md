@@ -5,8 +5,8 @@ description: >-
   살펴보겠습니다.
 authors:
   - XIYO
-lastModified: 2025-07-27T21:08:31+09:00
-published: 2025-07-22T00:45:51+09:00
+lastModified: 2025-07-27T21:20:48Z
+published: 2024-10-05T22:08:15Z
 ---
 # 리터럴의 메모리 저장 방식
 

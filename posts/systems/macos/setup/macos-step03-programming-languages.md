@@ -8,8 +8,8 @@ tags:
   - openjdk
   - macos-step03-programming-languages
   - intellij
-lastModified: 2025-07-26T11:55:18+09:00
-published: 2025-07-23T00:45:32+09:00
+lastModified: 2025-07-27T21:20:48Z
+published: 2025-07-22T00:14:46Z
 ---
 
 # 프로그래밍 언어 설치

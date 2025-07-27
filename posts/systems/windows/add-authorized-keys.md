@@ -3,8 +3,8 @@ title: SSH 공개키 등록 방법 - 윈도우
 description: 윈도우에서 SSH 설치 후 공개키를 등록하는 방법을 살펴봅시다.
 authors:
   - XIYO
-lastModified: 2025-07-26T11:55:18+09:00
-published: 2025-07-22T00:45:51+09:00
+lastModified: 2025-07-27T21:20:48Z
+published: 2024-03-24T20:56:45Z
 ---
 # SSH 공개키 등록 방법 - 윈도우
 

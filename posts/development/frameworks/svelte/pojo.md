@@ -3,8 +3,8 @@ title: 스벨트 개발 일지 1, POJO
 description: 저는 마크다운을 좋아하는데, 거기서도 좋아하는 문법은 [mermaidjs](https://mermaid.js.org/) 입니다.
 authors:
   - XIYO
-lastModified: 2025-07-26T11:55:18+09:00
-published: 2025-07-22T00:45:51+09:00
+lastModified: 2025-07-27T21:20:48Z
+published: 2024-08-11T21:09:24Z
 ---
 # 스벨트 개발 일지 1, POJO
 

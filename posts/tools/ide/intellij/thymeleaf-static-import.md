@@ -5,8 +5,8 @@ authors:
   - XIYO
   - kingtaehui
   - 이요
-lastModified: 2025-07-27T21:08:31+09:00
-published: 2025-07-22T00:45:51+09:00
+lastModified: 2025-07-27T21:20:48Z
+published: 2024-01-16T04:08:00Z
 ---
 # 인텔리제이의 HTML에서 정적 자원 인식 문제 해결
 

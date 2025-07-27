@@ -5,8 +5,8 @@ authors:
   - XIYO
   - xiyo
 category: blog
-lastModified: 2025-07-26T11:55:18+09:00
-published: 2025-07-21T23:15:35+09:00
+lastModified: 2025-07-27T21:20:48Z
+published: 2025-07-13T18:04:32Z
 ---
 # Git 히스토리 기반의 프론트매터 자동화 시스템 구축
 
@@ -201,8 +201,8 @@ title: 내 포스트
 category: blog        # 이거 사라지면 안 되는데...
 tags: [git, automation]  # 이것도...
 featured: true        # 이것도 중요한데...
-lastModified: 2025-07-26T11:55:18+09:00
-published: 2025-07-21T23:15:35+09:00
+lastModified: 2025-07-27T21:20:48Z
+published: 2025-07-13T18:04:32Z
 ---
 ```
 
@@ -248,8 +248,8 @@ title: 수동으로 복사-붙여넣기
 description: 이것도 수동으로 작성
 authors:
   - 어... 내 GitHub 아이디가 뭐였지?
-lastModified: 2025-07-26T11:55:18+09:00
-published: 2025-07-21T23:15:35+09:00
+lastModified: 2025-07-27T21:20:48Z
+published: 2025-07-13T18:04:32Z
 ---
 ```
 
@@ -272,8 +272,8 @@ authors:
 messages:
   - 📝 블로그 포스트 작성
 category: blog  # 이건 내가 설정한 거니까 그대로 유지
-lastModified: 2025-07-26T11:55:18+09:00
-published: 2025-07-21T23:15:35+09:00
+lastModified: 2025-07-27T21:20:48Z
+published: 2025-07-13T18:04:32Z
 ---
 ```
 

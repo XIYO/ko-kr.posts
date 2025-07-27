@@ -3,8 +3,8 @@ title: 브랜치 이름 바꾸기
 description: 로컬에서 프로젝트를 깃으로 관리하기 위해 깃으로 초기화를 했더니 `master` 브랜치가 생성되었습니다.
 authors:
   - XIYO
-lastModified: 2025-07-26T11:55:18+09:00
-published: 2025-07-22T00:45:51+09:00
+lastModified: 2025-07-27T21:20:48Z
+published: 2024-03-26T23:11:58Z
 ---
 # 브랜치 이름 바꾸기
 

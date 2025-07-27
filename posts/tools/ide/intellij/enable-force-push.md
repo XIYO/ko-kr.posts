@@ -3,8 +3,8 @@ title: ENABLE FORCE PUSH ON INTELLIJ
 description: 인텔리제이에서 포스 푸시는 마스터, 메인 브랜치에서는 할 수 없게 기본적으로 보호되어있습니다. \
 authors:
   - XIYO
-lastModified: 2025-07-27T21:08:31+09:00
-published: 2025-07-22T00:45:51+09:00
+lastModified: 2025-07-27T21:20:48Z
+published: 2024-03-24T18:17:31Z
 ---
 # ENABLE FORCE PUSH ON INTELLIJ
 

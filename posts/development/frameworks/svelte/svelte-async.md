@@ -3,8 +3,8 @@ title: 스벨트의 비동기 처리 지원
 description: "Svelte 5 비동기 처리 개선: SvelteKit 기존 방식과의 비교 문서입니다."
 authors:
   - XIYO
-lastModified: 2025-07-26T11:55:18+09:00
-published: 2025-07-22T00:45:51+09:00
+lastModified: 2025-07-27T21:20:48Z
+published: 2025-05-25T22:33:29Z
 ---
 # 스벨트의 비동기 처리 지원
 

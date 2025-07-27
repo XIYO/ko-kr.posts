@@ -5,8 +5,8 @@ description: >-
   `https://api.hello.dev`와 `https://hello.dev` 간의 요청을 기준으로 합니다.
 authors:
   - XIYO
-lastModified: 2025-07-27T21:08:31+09:00
-published: 2025-07-22T00:45:51+09:00
+lastModified: 2025-07-27T21:20:48Z
+published: 2025-06-15T22:01:45Z
 ---
 # 쿠키 전송 시나리오 분석
 
