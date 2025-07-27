@@ -16,6 +16,7 @@ tags:
   - vscode
   - iterm2
   - jetbrains
+lastModified: 2025-07-26T11:55:18+09:00
 ---
 
 # 개발자 필수 도구 설치

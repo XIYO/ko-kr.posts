@@ -15,6 +15,7 @@ dates:
   - "2024-03-23T14:46:38.000Z"
 authors:
   - XIYO
+lastModified: 2025-07-26T11:55:18+09:00
 ---
 # WinGet 실행 오류 해결 방법
 

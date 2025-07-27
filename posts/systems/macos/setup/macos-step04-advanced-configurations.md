@@ -14,6 +14,7 @@ tags:
   - productivity
   - screenshot
   - spotlight
+lastModified: 2025-07-26T11:55:18+09:00
 ---
 
 # macOS 꿀팁 모음

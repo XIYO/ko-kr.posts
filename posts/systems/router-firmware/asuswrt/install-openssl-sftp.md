@@ -15,6 +15,7 @@ dates:
   - "2023-10-17T12:42:39.000Z"
 authors:
   - XIYO
+lastModified: 2025-07-26T11:55:18+09:00
 ---
 # INSTALL OPENSSL AND SFTP ON ASUSWRT
 

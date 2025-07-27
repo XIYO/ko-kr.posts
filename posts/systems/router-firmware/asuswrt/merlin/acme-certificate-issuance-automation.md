@@ -15,6 +15,7 @@ dates:
   - "2025-02-16T14:11:19.000Z"
 authors:
   - XIYO
+lastModified: 2025-07-26T11:55:18+09:00
 ---
 # ACME 인증서 발급 자동화 (ASUS AC88U 라우터)
 

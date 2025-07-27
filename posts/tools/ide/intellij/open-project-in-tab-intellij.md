@@ -15,6 +15,7 @@ dates:
   - "2025-04-13T04:40:32.000Z"
 authors:
   - XIYO
+lastModified: 2025-07-26T11:55:18+09:00
 ---
 # macOS에서 IntelliJ 의 프로젝트를 탭으로 열리게 설정하는 방법
 

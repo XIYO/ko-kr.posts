@@ -12,6 +12,7 @@ dates:
   - "2024-03-24T07:54:26.000Z"
 authors:
   - XIYO
+lastModified: 2025-07-26T11:55:18+09:00
 ---
 # INSTALL RSYNC
 

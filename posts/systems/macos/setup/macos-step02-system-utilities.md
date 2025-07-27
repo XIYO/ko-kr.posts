@@ -16,6 +16,7 @@ tags:
   - obsidian
   - chrome
   - rectangle
+lastModified: 2025-07-26T11:55:18+09:00
 ---
 
 # 시스템 유틸리티 설치

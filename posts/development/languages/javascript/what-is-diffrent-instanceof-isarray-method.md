@@ -17,6 +17,7 @@ dates:
 authors:
   - XIYO
   - 이요
+lastModified: 2025-07-26T11:55:18+09:00
 ---
 # 배열을 정확히 검증하는 방법
 

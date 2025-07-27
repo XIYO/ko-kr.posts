@@ -12,6 +12,7 @@ dates:
   - "2024-09-18T08:12:07.000Z"
 authors:
   - XIYO
+lastModified: 2025-07-26T11:55:18+09:00
 ---
 # Paraglide JS 적용기
 

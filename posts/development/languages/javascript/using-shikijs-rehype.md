@@ -9,6 +9,7 @@ dates:
   - "2024-08-13T20:19:14.000Z"
 authors:
   - XIYO
+lastModified: 2025-07-26T11:55:18+09:00
 ---
 # Shiki와 함께하는 Markdown 코드 하이라이팅
 

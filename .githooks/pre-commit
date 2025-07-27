@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# 현재 시간 (ISO 8601 형식)
+CURRENT_DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+
+# 스테이징된 마크다운 파일 처리
+git diff --cached --name-only --diff-filter=ACM | grep '\.md$' | while read file; do
+    if [ -f "$file" ]; then
+        echo "Updating lastModified: $file"
+        
+        # 파일에 프론트매터가 있는지 확인
+        if head -n 1 "$file" | grep -q '^---$'; then
+            # 프론트매터가 있는 경우 lastModified 업데이트
+            awk -v date="$CURRENT_DATE" '
+            BEGIN { in_fm = 0; has_lastModified = 0 }
+            /^---$/ && !in_fm { in_fm = 1; print; next }
+            /^---$/ && in_fm { 
+                if (!has_lastModified) print "lastModified: " date
+                in_fm = 0; print; next 
+            }
+            in_fm {
+                if (/^lastModified:/) { 
+                    print "lastModified: " date
+                    has_lastModified = 1
+                    next 
+                }
+                print
+            }
+            !in_fm { print }
+            ' "$file" > "$file.tmp" && mv "$file.tmp" "$file"
+        else
+            # 프론트매터가 없는 경우 추가
+            {
+                echo "---"
+                echo "lastModified: $CURRENT_DATE"
+                echo "---"
+                echo
+                cat "$file"
+            } > "$file.tmp" && mv "$file.tmp" "$file"
+        fi
+        
+        # 변경된 파일을 다시 스테이징
+        git add "$file"
+    fi
+done
+
+exit 0

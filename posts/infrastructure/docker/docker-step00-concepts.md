@@ -11,6 +11,7 @@ tags:
   - concepts
   - virtualization
   - reference
+lastModified: 2025-07-26T18:08:53+09:00
 ---
 
 # 도커 0단계 개념

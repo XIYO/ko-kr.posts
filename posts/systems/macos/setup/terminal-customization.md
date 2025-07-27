@@ -14,6 +14,7 @@ tags:
   - powerlevel10k
   - iterm2
   - zsh
+lastModified: 2025-07-26T11:55:18+09:00
 ---
 
 # 터미널 꾸미기 가이드

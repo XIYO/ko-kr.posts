@@ -29,6 +29,7 @@ dates:
   - "2023-11-12T13:29:23.000Z"
 authors:
   - XIYO
+lastModified: 2025-07-26T11:55:18+09:00
 ---
 # INSTALL TRANSMISSION ON ASUSWRT
 
