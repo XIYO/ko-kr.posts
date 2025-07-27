@@ -1,7 +1,7 @@
 ---
 title: 옵시디언 동기화 가이드
 description: iCloud, Obsidian Sync, 클라우드 드라이브, Git까지. 4년간의 실전 경험으로 알려드리는 옵시디언 동기화의 모든 것. 동기화 충돌로 500개의 노트를 잃은 경험부터 안정적인 동기화 시스템 구축까지, 모든 노하우를 공유합니다.
-published: 2025-01-27
+published: 2025-07-27
 authors:
   - XIYO
 tags:

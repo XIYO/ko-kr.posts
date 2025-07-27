@@ -8,7 +8,7 @@ tags:
   - winget
   - homebrew
   - setup
-published: 2025-01-26
+published: 2025-07-27
 ---
 
 # 옵시디언 설치 가이드: 패키지 매니저로 간단하게 시작하기

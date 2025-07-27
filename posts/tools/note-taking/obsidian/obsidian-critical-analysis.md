@@ -8,7 +8,7 @@ tags:
   - productivity
   - tools
   - critical-review
-published: 2025-01-26
+published: 2025-07-27
 ---
 
 # 옵시디언의 실체: 과대포장된 마크다운 에디터에 대한 비판적 분석
