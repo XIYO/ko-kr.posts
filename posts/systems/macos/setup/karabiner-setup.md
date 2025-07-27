@@ -3,9 +3,6 @@ title: Karabiner-Elements 설정 가이드
 description: >-
   Karabiner-Elements는 macOS의 키보드 동작을 자유롭게 커스터마이징할 수 있는 강력한 도구입니다. 이 가이드에서는 가장
   유용한 세 가지 설정을 다룹니다.
-dates:
-  - "2025-07-21T15:45:51.000Z"
-  - "2025-07-21T15:14:46.000Z"
 authors:
   - XIYO
 tags:
@@ -14,6 +11,7 @@ tags:
   - keyboard
   - productivity
 lastModified: 2025-07-26T11:55:18+09:00
+published: 2025-07-22T00:45:51+09:00
 ---
 
 # Karabiner-Elements 설정 가이드

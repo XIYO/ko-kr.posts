@@ -1,8 +1,6 @@
 ---
 title: Docker 개념 가이드
 description: Docker의 기본 개념과 컨테이너 기술을 이해하기 위한 가이드입니다. 가상화와 컨테이너화의 차이점, Docker의 핵심 구성 요소를 설명합니다.
-dates:
-  - "2025-07-26T08:00:00.000Z"
 authors:
   - XIYO
 tags:
@@ -12,6 +10,7 @@ tags:
   - virtualization
   - reference
 lastModified: 2025-07-26T18:08:53+09:00
+published: 2025-07-26T18:08:53+09:00
 ---
 
 # 도커 0단계 개념

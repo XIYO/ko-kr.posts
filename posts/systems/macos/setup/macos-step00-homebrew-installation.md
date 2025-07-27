@@ -1,12 +1,6 @@
 ---
 title: Mac 초기 설정 가이드
 description: 이 가이드는 Apple Silicon Mac을 위한 개발 환경 설정 문서입니다. Intel Mac을 위한 설정 방법은 다루지 않습니다.
-dates:
-  - "2025-07-22T16:09:12.000Z"
-  - "2025-07-22T15:45:32.000Z"
-  - "2025-07-21T19:25:39.000Z"
-  - "2025-07-21T15:45:51.000Z"
-  - "2025-07-21T15:14:46.000Z"
 authors:
   - XIYO
 tags:
@@ -15,6 +9,7 @@ tags:
   - apple-silicon
   - getting-started
 lastModified: 2025-07-26T11:55:18+09:00
+published: 2025-07-23T00:45:32+09:00
 ---
 
 # Mac 초기 설정 가이드

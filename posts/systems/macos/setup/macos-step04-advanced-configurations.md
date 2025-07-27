@@ -1,10 +1,5 @@
 ---
 title: macOS 꿀팁 모음
-dates:
-  - "2025-07-22T16:09:12.000Z"
-  - "2025-07-22T15:45:32.000Z"
-  - "2025-07-21T15:45:51.000Z"
-  - "2025-07-21T15:14:46.000Z"
 authors:
   - XIYO
 tags:
@@ -15,6 +10,7 @@ tags:
   - screenshot
   - spotlight
 lastModified: 2025-07-26T11:55:18+09:00
+published: 2025-07-23T00:45:32+09:00
 ---
 
 # macOS 꿀팁 모음

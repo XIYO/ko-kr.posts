@@ -1,10 +1,5 @@
 ---
 title: Git & GitHub 설정
-dates:
-  - "2025-07-22T15:45:32.000Z"
-  - "2025-07-21T19:25:39.000Z"
-  - "2025-07-21T15:45:51.000Z"
-  - "2025-07-21T15:14:46.000Z"
 authors:
   - XIYO
 tags:
@@ -15,6 +10,7 @@ tags:
   - ssh
   - github-cli
 lastModified: 2025-07-26T11:55:18+09:00
+published: 2025-07-22T00:45:51+09:00
 ---
 
 # Git & GitHub 설정
