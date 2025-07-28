@@ -2,7 +2,7 @@
 title: "Git Checkout vs Switch: 왜 새로운 명령어가 필요했나?"
 description: "Git 2.23에서 도입된 switch와 restore 명령어의 탄생 배경과 checkout과의 차이점, 그리고 IntelliJ는 왜 아직도 checkout을 고수하는지에 대한 심층 분석"
 published: 2025-07-28T00:00:00Z
-lastModified: 2025-07-28T03:08:00Z
+lastModified: 2025-07-28T03:09:52Z
 authors:
   - XIYO
 ---
@@ -142,7 +142,9 @@ git restore .
 
 ### IntelliJ IDEA의 선택
 
-IntelliJ IDEA는 여전히 checkout을 사용합니다. JetBrains의 공식 입장을 요약하면, **"우리는 이 명령어를 도입할 특별한 필요성을 보지 못합니다. checkout은 여전히 완벽하게 작동하며, 모든 Git 버전과 호환됩니다."**
+IntelliJ IDEA는 여전히 checkout을 사용합니다. JetBrains의 공식 입장을 요약하면:
+
+> "우리는 이 명령어를 도입할 특별한 필요성을 보지 못합니다. checkout은 여전히 완벽하게 작동하며, 모든 Git 버전과 호환됩니다."
 
 #### 주요 이유들
 
@@ -200,7 +202,9 @@ git restore --staged .
 
 ### 공식 입장
 
-Git 개발팀의 입장은 명확합니다. **"checkout은 deprecated되지 않았으며, 가까운 미래에 제거될 계획이 없습니다."**
+Git 개발팀의 입장은 명확합니다.
+
+> "checkout은 deprecated되지 않았으며, 가까운 미래에 제거될 계획이 없습니다."
 
 ### 현실적인 전망
 
