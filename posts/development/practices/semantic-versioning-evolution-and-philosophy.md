@@ -34,9 +34,19 @@ graph TD
     A --> Y[라이브러리 Y v2.0]
     Y --> X2[라이브러리 X v1.3]
     
-    style X1 fill:#ffcccc
-    style X2 fill:#ffcccc
-    style Y fill:#ccffcc
+    %% Solarized 기반 스타일 정의
+    classDef conflict fill:#d30102,stroke:#cb4b16,stroke-width:2px,color:#fdf6e3
+    classDef success fill:#859900,stroke:#2aa198,stroke-width:2px,color:#fdf6e3
+    classDef default fill:#073642,stroke:#586e75,stroke-width:1px,color:#839496
+    
+    class X1,X2 conflict
+    class Y success
+    class A default
+    
+    %% 링크 스타일 정의
+    linkStyle 0 stroke:#cb4b16,stroke-width:2px
+    linkStyle 1 stroke:#859900,stroke-width:2px
+    linkStyle 2 stroke:#cb4b16,stroke-width:2px
 ```
 
 이런 상황에서 라이브러리 X의 버전 충돌을 해결하려면, 각 버전 간의 호환성을 일일이 확인해야 했습니다. 버전 번호만으로는 호환성을 판단할 수 없었기 때문입니다.
