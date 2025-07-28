@@ -2,7 +2,7 @@
 title: "Git Checkout vs Switch: 왜 새로운 명령어가 필요했나?"
 description: "Git 2.23에서 도입된 switch와 restore 명령어의 탄생 배경과 checkout과의 차이점, 그리고 IntelliJ는 왜 아직도 checkout을 고수하는지에 대한 심층 분석"
 published: 2025-07-28T00:00:00Z
-lastModified: 2025-07-28T02:49:55Z
+lastModified: 2025-07-28T02:52:14Z
 authors:
   - XIYO
 ---
@@ -132,6 +132,11 @@ git restore .
 | 파일 복원         | ✅ `checkout -- file`      | ❌                        | ✅ `restore file`          |
 | Detached HEAD | ⚠️ `checkout hash`        | ✅ `switch --detach hash` | ❌                         |
 | 스테이지 취소       | ✅ `checkout HEAD -- file` | ❌                        | ✅ `restore --staged file` |
+
+> [!note] 
+> - ✅ 해당 기능 지원
+> - ❌ 해당 기능 미지원  
+> - ⚠️ 지원하지만 주의 필요 (예: 의도치 않은 detached HEAD 상태)
 
 ## 현실: 왜 아직도 Checkout을 쓰나요?
 
