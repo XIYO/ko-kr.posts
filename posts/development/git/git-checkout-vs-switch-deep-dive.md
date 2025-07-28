@@ -2,7 +2,7 @@
 title: "Git Checkout vs Switch: 왜 새로운 명령어가 필요했나?"
 description: "Git 2.23에서 도입된 switch와 restore 명령어의 탄생 배경과 checkout과의 차이점, 그리고 IntelliJ는 왜 아직도 checkout을 고수하는지에 대한 심층 분석"
 published: 2025-07-28T00:00:00Z
-lastModified: 2025-07-28T02:46:26Z
+lastModified: 2025-07-28T02:49:55Z
 authors:
   - XIYO
 ---
@@ -125,13 +125,13 @@ git restore .
 
 ## 기능 비교표: 한눈에 보기
 
-| 작업 | git checkout | git switch | git restore |
-|------|--------------|------------|-------------|
-| 브랜치 전환 | ✅ `checkout main` | ✅ `switch main` | ❌ |
-| 새 브랜치 생성 | ✅ `checkout -b new` | ✅ `switch -c new` | ❌ |
-| 파일 복원 | ✅ `checkout -- file` | ❌ | ✅ `restore file` |
-| Detached HEAD | ⚠️ `checkout hash` | ✅ `switch --detach hash` | ❌ |
-| 스테이지 취소 | ✅ `checkout HEAD -- file` | ❌ | ✅ `restore --staged file` |
+| 작업            | git checkout              | git switch               | git restore               |
+| ------------- | ------------------------- | ------------------------ | ------------------------- |
+| 브랜치 전환        | ✅ `checkout main`         | ✅ `switch main`          | ❌                         |
+| 새 브랜치 생성      | ✅ `checkout -b new`       | ✅ `switch -c new`        | ❌                         |
+| 파일 복원         | ✅ `checkout -- file`      | ❌                        | ✅ `restore file`          |
+| Detached HEAD | ⚠️ `checkout hash`        | ✅ `switch --detach hash` | ❌                         |
+| 스테이지 취소       | ✅ `checkout HEAD -- file` | ❌                        | ✅ `restore --staged file` |
 
 ## 현실: 왜 아직도 Checkout을 쓰나요?
 
@@ -183,23 +183,21 @@ git restore --staged .
 
 ### 권장 사항
 
-```markdown
-✅ 추천하는 경우:
+**✅ 추천하는 경우**
 - 새로운 개발자 교육 시
 - 새 프로젝트 시작 시
 - Git 2.23 이상 환경
 
-⚠️ 신중해야 할 경우:
+**⚠️ 신중해야 할 경우**
 - 레거시 시스템 작업
 - 다양한 Git 버전 환경
 - 기존 자동화 스크립트 많은 경우
-```
 
 ## Git의 미래: Checkout은 사라질까?
 
 ### 공식 입장
 
-Git 개발팀의 입장은 명확합니다:
+Git 개발팀의 입장은 명확합니다.
 
 > "checkout은 deprecated되지 않았으며, 가까운 미래에 제거될 계획이 없습니다."
 
