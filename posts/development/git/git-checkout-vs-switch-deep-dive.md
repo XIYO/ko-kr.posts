@@ -2,7 +2,7 @@
 title: "Git Checkout vs Switch: 왜 새로운 명령어가 필요했나?"
 description: "Git 2.23에서 도입된 switch와 restore 명령어의 탄생 배경과 checkout과의 차이점, 그리고 IntelliJ는 왜 아직도 checkout을 고수하는지에 대한 심층 분석"
 published: 2025-07-28T00:00:00Z
-lastModified: 2025-07-28T02:33:06Z
+lastModified: 2025-07-28T02:46:26Z
 authors:
   - XIYO
 ---
@@ -71,7 +71,7 @@ git checkout abc123
 
 ### Switch vs Checkout: 무엇이 다른가?
 
-#### 1. 브랜치 전환
+#### 브랜치 전환
 
 ```bash
 # 기존 방식
@@ -83,7 +83,7 @@ git switch main
 git switch -c feature/login  # create의 약자
 ```
 
-#### 2. Detached HEAD 방지
+#### Detached HEAD 방지
 
 ```bash
 # 기존: 실수로 detached HEAD 상태가 되기 쉬움
@@ -94,7 +94,7 @@ git switch --detach abc123def
 # 명확한 경고와 함께 detached HEAD 상태로 전환
 ```
 
-#### 3. 더 직관적인 옵션
+#### 더 직관적인 옵션
 
 ```bash
 # 원격 브랜치 가져오기
@@ -143,9 +143,9 @@ IntelliJ IDEA는 여전히 checkout을 사용합니다. JetBrains의 공식 입�
 
 #### 주요 이유들
 
-1. **후방 호환성**: 구버전 Git을 사용하는 환경 지원
-2. **안정성**: 검증된 워크플로우 유지
-3. **사용자 습관**: 이미 익숙한 인터페이스 보존
+- **후방 호환성**: 구버전 Git을 사용하는 환경 지원
+- **안정성**: 검증된 워크플로우 유지
+- **사용자 습관**: 이미 익숙한 인터페이스 보존
 
 ### 다른 도구들의 대응
 
@@ -205,9 +205,9 @@ Git 개발팀의 입장은 명확합니다:
 
 ### 현실적인 전망
 
-1. **공존의 시대**: checkout, switch, restore 모두 계속 지원
-2. **점진적 전환**: 새로운 사용자는 switch/restore 학습
-3. **도구의 진화**: IDE와 GUI 도구들의 점진적 적응
+- **공존의 시대**: checkout, switch, restore 모두 계속 지원
+- **점진적 전환**: 새로운 사용자는 switch/restore 학습
+- **도구의 진화**: IDE와 GUI 도구들의 점진적 적응
 
 ## 마무리: 더 나은 Git을 향해
 
