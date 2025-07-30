@@ -3,8 +3,8 @@ title: "데이터베이스 동시성 문제와 ANSI SQL 표준화"
 description: "ANSI SQL의 네 가지 동시성 문제부터 MVCC 혁신까지, 데이터베이스 동시성 제어의 역사와 핵심 개념을 실무 관점에서 완전 정복"
 authors: ["XIYO"]
 tags: ["database", "concurrency", "ANSI SQL", "MVCC", "isolation levels", "transaction", "PostgreSQL", "MySQL", "Oracle"]
-published: "2025-07-30"
-lastModified: 2025-07-30T19:07:24Z
+published: 2025-07-31T00:00:00+09:00
+lastModified: 2025-07-30T19:28:59Z
 ---
 
 # 데이터베이스 동시성 문제와 ANSI SQL 표준화
@@ -37,7 +37,7 @@ ANSI SQL-92 표준에서 정의한 세 가지 동시성 문제[^5](Dirty Read, N
 ```mermaid
 ---
 title: 관리자가 재고를 업데이트하는 중에 고객이 조회
-lastModified: 2025-07-30T19:07:24Z
+lastModified: 2025-07-30T19:28:59Z
 ---
 sequenceDiagram
     participant M as 관리자
@@ -76,7 +76,7 @@ sequenceDiagram
 ```mermaid
 ---
 title: 보고서 생성 중에 새로운 매출 데이터가 추가됨
-lastModified: 2025-07-30T19:07:24Z
+lastModified: 2025-07-30T19:28:59Z
 ---
 sequenceDiagram
     participant R as 보고서 생성<br/>트랜잭션
@@ -121,7 +121,7 @@ sequenceDiagram
 ```mermaid
 ---
 title: 분석 중에 새로운 고액 주문이 추가됨
-lastModified: 2025-07-30T19:07:24Z
+lastModified: 2025-07-30T19:28:59Z
 ---
 sequenceDiagram
     participant A as 분석<br/>트랜잭션
@@ -169,7 +169,7 @@ sequenceDiagram
 ```mermaid
 ---
 title: 두 사용자가 동시에 포인트 사용 시도
-lastModified: 2025-07-30T19:07:24Z
+lastModified: 2025-07-30T19:28:59Z
 ---
 sequenceDiagram
     participant A as 사용자 A<br/>(온라인 쇼핑)
