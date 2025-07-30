@@ -2,9 +2,39 @@
 title: "시멘틱 버저닝의 탄생과 진화: 소프트웨어 버전 관리의 철학"
 description: "시멘틱 버저닝이 탄생하기 전 무질서했던 버전 관리의 역사부터 현재 각 플랫폼별 버저닝 문화의 차이점까지, 개념적이고 역사적인 관점에서 살펴보는 버전 관리 전략"
 published: 2025-07-27T00:00:00Z
-lastModified: 2025-07-27T14:27:45Z
+lastModified: 2025-07-30T13:59:51Z
 authors:
   - XIYO
+tags:
+  - semantic-versioning
+  - semver
+  - version-control
+  - software-versioning
+  - dependency-management
+  - package-management
+  - npm
+  - maven
+  - pip
+  - pypi
+  - rubygems
+  - cargo
+  - go-modules
+  - best-practices
+  - breaking-changes
+  - backward-compatibility
+  - api-versioning
+  - release-management
+  - pre-release
+  - alpha
+  - beta
+  - release-candidate
+  - snapshot
+  - calver
+  - pep-440
+  - dependency-hell
+  - software-development
+  - version-management
+  - software-architecture
 ---
 
 # 시멘틱 버저닝의 탄생과 진화: 소프트웨어 버전 관리의 철학
