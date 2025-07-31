@@ -1,5 +1,10 @@
 ---
-lastModified: 2025-07-31T15:08:23Z
+title: "데이터베이스 락킹의 진화: 비관적 락에서 낙관적 락까지"
+description: "1970년대 IBM System R부터 현재까지 50년간의 데이터베이스 락킹 기술 진화를 탐구하고, 비관적 락과 낙관적 락의 차이점, 성능 특성, 실무 적용 가이드를 제공합니다."
+tags: ["database", "concurrency", "pessimistic-lock", "optimistic-lock", "performance", "architecture"]
+authors: ["gimtaehui"]
+published: 2025-08-01T09:00:00+09:00
+lastModified: 2025-07-31T15:16:08Z
 ---
 
 # 데이터베이스 락킹의 진화: 비관적 락에서 낙관적 락까지
